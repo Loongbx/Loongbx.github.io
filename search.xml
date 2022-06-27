@@ -179,31 +179,6 @@
     
     
     <entry>
-      <title>Win7登录密码重置</title>
-      <link href="/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/"/>
-      <url>/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Win7登录密码重置"><a href="#Win7登录密码重置" class="headerlink" title="Win7登录密码重置"></a>Win7登录密码重置</h2><ol><li>确认可行性：<br>登录界面连按5次shift，弹出粘滞界面<br>意外关机后重启，有启动修复选项</li><li>修改 程序为cmd<br>弹出启动修复程序框，打开隐藏问题<br>下拉，打开本地文件.txt<br>file-&gt;打开C:\windows\system32\<br>文件类型选所有文件<br>找到sethc.exe,重命名（1122）<br>找到cmd.exe 多次复制，粘贴出 cmd副本.exe ,重命名为sethc<br>关机重启</li><li>cmd实现密码重置   <pre class="line-numbers language-none"><code class="language-none">net user UserName NewPw  设置新密码net user NewUn NewPw &#x2F;add  创建新用户net localgroup administrators username &#x2F;add  提升管理员权限net user UserName &#x2F;del 删除用户<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 网络安全 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> shift </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Windows快捷键</title>
       <link href="/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
       <url>/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</url>
@@ -221,6 +196,31 @@
         <tags>
             
             <tag> 快捷键 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Win7登录密码重置</title>
+      <link href="/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/"/>
+      <url>/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Win7登录密码重置"><a href="#Win7登录密码重置" class="headerlink" title="Win7登录密码重置"></a>Win7登录密码重置</h2><ol><li>确认可行性：<br>登录界面连按5次shift，弹出粘滞界面<br>意外关机后重启，有启动修复选项</li><li>修改 程序为cmd<br>弹出启动修复程序框，打开隐藏问题<br>下拉，打开本地文件.txt<br>file-&gt;打开C:\windows\system32\<br>文件类型选所有文件<br>找到sethc.exe,重命名（1122）<br>找到cmd.exe 多次复制，粘贴出 cmd副本.exe ,重命名为sethc<br>关机重启</li><li>cmd实现密码重置   <pre class="line-numbers language-none"><code class="language-none">net user UserName NewPw  设置新密码net user NewUn NewPw &#x2F;add  创建新用户net localgroup administrators username &#x2F;add  提升管理员权限net user UserName &#x2F;del 删除用户<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> shift </tag>
             
         </tags>
       
@@ -329,6 +329,31 @@
     
     
     <entry>
+      <title>电影收录</title>
+      <link href="/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/"/>
+      <url>/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="电影收录"><a href="#电影收录" class="headerlink" title="电影收录"></a>电影收录</h2><h3 id="大陆："><a href="#大陆：" class="headerlink" title="大陆："></a>大陆：</h3><pre class="line-numbers language-none"><code class="language-none">《无间道123》《让子弹飞》《邪不压正》《黄飞鸿》《赛德克·巴莱》《狄仁杰》 《夏洛特烦恼》《枪火1》《智取威虎山》《心迷宫》《无人区》《杀生》《不成问题的问题》《十二公民》《盲山》《私人订制》《边境风云》《天注定》《新宿事件》《罗曼蒂克的消亡史》《爆裂无声》《智取威虎山》《天注定》《上海皇帝》《烈日灼心》《南方车站的聚会》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="台湾"><a href="#台湾" class="headerlink" title="台湾"></a>台湾</h3><pre class="line-numbers language-none"><code class="language-none">《大佛普拉斯》《血观音》《阳光普照》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="韩国："><a href="#韩国：" class="headerlink" title="韩国："></a>韩国：</h3><pre class="line-numbers language-none"><code class="language-none">《夺宝联盟》《鸣梁海战》《釜山行》《流感》《摩天楼》《卑劣的街头》《金福南杀人事件始末》《新世界》《高地战》《坏家伙的全胜时代》《出租车司机》《老手》《太极旗飘扬》《犯罪都市》《局内人》《老男孩》《孤胆特工》《蒙太奇》《追击者》《黄海》《恐怖直播》《阿修罗》  《特工》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="欧美："><a href="#欧美：" class="headerlink" title="欧美："></a>欧美：</h3><pre class="line-numbers language-none"><code class="language-none">《肖申克的救赎》《暴力街区》《食人鱼》《巴霍巴利王》《猩球崛起1》《爱的那点性事》《死神5》《食物链 三级》《行尸走肉 美剧》《低俗小说》《战争之王》《被解救的姜戈》《血钻》《割喉岛》《未来水世界》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="泰国"><a href="#泰国" class="headerlink" title="泰国:"></a>泰国:</h3><pre class="line-numbers language-none"><code class="language-none">《天才枪手》<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="战争："><a href="#战争：" class="headerlink" title="战争："></a>战争：</h3><pre class="line-numbers language-none"><code class="language-none">《t-34坦克》《兵临城下》《地雷区》《血战钢锯岭》《帝国的毁灭》《女狙击手》《猎杀U-571》《前哨》《冒牌上尉》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 影音娱乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电影 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电脑软件</title>
       <link href="/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/"/>
       <url>/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/</url>
@@ -371,31 +396,6 @@
         <tags>
             
             <tag> 易 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影收录</title>
-      <link href="/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/"/>
-      <url>/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/</url>
-      
-        <content type="html"><![CDATA[<h2 id="电影收录"><a href="#电影收录" class="headerlink" title="电影收录"></a>电影收录</h2><h3 id="大陆："><a href="#大陆：" class="headerlink" title="大陆："></a>大陆：</h3><pre class="line-numbers language-none"><code class="language-none">《无间道123》《让子弹飞》《邪不压正》《黄飞鸿》《赛德克·巴莱》《狄仁杰》 《夏洛特烦恼》《枪火1》《智取威虎山》《心迷宫》《无人区》《杀生》《不成问题的问题》《十二公民》《盲山》《私人订制》《边境风云》《天注定》《新宿事件》《罗曼蒂克的消亡史》《爆裂无声》《智取威虎山》《天注定》《上海皇帝》《烈日灼心》《南方车站的聚会》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="台湾"><a href="#台湾" class="headerlink" title="台湾"></a>台湾</h3><pre class="line-numbers language-none"><code class="language-none">《大佛普拉斯》《血观音》《阳光普照》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="韩国："><a href="#韩国：" class="headerlink" title="韩国："></a>韩国：</h3><pre class="line-numbers language-none"><code class="language-none">《夺宝联盟》《鸣梁海战》《釜山行》《流感》《摩天楼》《卑劣的街头》《金福南杀人事件始末》《新世界》《高地战》《坏家伙的全胜时代》《出租车司机》《老手》《太极旗飘扬》《犯罪都市》《局内人》《老男孩》《孤胆特工》《蒙太奇》《追击者》《黄海》《恐怖直播》《阿修罗》  《特工》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="欧美："><a href="#欧美：" class="headerlink" title="欧美："></a>欧美：</h3><pre class="line-numbers language-none"><code class="language-none">《肖申克的救赎》《暴力街区》《食人鱼》《巴霍巴利王》《猩球崛起1》《爱的那点性事》《死神5》《食物链 三级》《行尸走肉 美剧》《低俗小说》《战争之王》《被解救的姜戈》《血钻》《割喉岛》《未来水世界》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="泰国"><a href="#泰国" class="headerlink" title="泰国:"></a>泰国:</h3><pre class="line-numbers language-none"><code class="language-none">《天才枪手》<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="战争："><a href="#战争：" class="headerlink" title="战争："></a>战争：</h3><pre class="line-numbers language-none"><code class="language-none">《t-34坦克》《兵临城下》《地雷区》《血战钢锯岭》《帝国的毁灭》《女狙击手》《猎杀U-571》《前哨》《冒牌上尉》<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 影音娱乐 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电影 </tag>
             
         </tags>
       
