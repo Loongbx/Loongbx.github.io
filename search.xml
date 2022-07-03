@@ -179,31 +179,6 @@
     
     
     <entry>
-      <title>Windows快捷键</title>
-      <link href="/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
-      <url>/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Windows快捷操作"><a href="#Windows快捷操作" class="headerlink" title="Windows快捷操作"></a>Windows快捷操作</h2><h3 id="运行快捷指令"><a href="#运行快捷指令" class="headerlink" title="运行快捷指令"></a>运行快捷指令</h3><pre class="line-numbers language-none"><code class="language-none">Win+R:cmdDOS命令行界面control控制面板regedit打开注册表calc计算器notepad记事本taskmgr任务管理器osk虚拟键盘mspaint画图工具magnify放大镜cleanmgr磁盘清理winver查看Windows版本ncpa.cpl网络连接管理explorer资源管理器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><pre class="line-numbers language-none"><code class="language-none">Win + R打开运行窗口Space切换输入法D返回桌面E资源管理器I设置界面M最小化所有窗口shift+M还原最小化的窗口L快速锁屏←→分屏↑↓放大缩小num(1,2,3..)打开任务栏第N个程序V剪贴板home最小化所有非当前窗口Ctrl +A全选F查找关键字X&#x2F;C&#x2F;V剪切&#x2F;复制&#x2F;粘贴Z撤销操作Y恢复上一步操作Shift+N新建文件夹Tab切换页面num切换到第N个页面N新建页面Shift+Esc任务管理器浏览器：R刷新页面T新建标签页W关闭页面shift+T恢复关闭的网页Tab同上num同上L光标定位到地址栏Shift + Delete删除文件，不放入回收站←→拉选文本Alt +Enter查看文件属性F4关闭应用Tab切换应用←→后退&#x2F;前进页面F数字区F2重命名F5刷新F11全屏F12浏览器审查元素&#x2F;调试界面PRTSC截屏，Ctrl+v应用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> PC </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 快捷键 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Win7登录密码重置</title>
       <link href="/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/"/>
       <url>/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/</url>
@@ -221,6 +196,31 @@
         <tags>
             
             <tag> shift </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows快捷键</title>
+      <link href="/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Windows快捷操作"><a href="#Windows快捷操作" class="headerlink" title="Windows快捷操作"></a>Windows快捷操作</h2><h3 id="运行快捷指令"><a href="#运行快捷指令" class="headerlink" title="运行快捷指令"></a>运行快捷指令</h3><pre class="line-numbers language-none"><code class="language-none">Win+R:cmdDOS命令行界面control控制面板regedit打开注册表calc计算器notepad记事本taskmgr任务管理器osk虚拟键盘mspaint画图工具magnify放大镜cleanmgr磁盘清理winver查看Windows版本ncpa.cpl网络连接管理explorer资源管理器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><pre class="line-numbers language-none"><code class="language-none">Win + R打开运行窗口Space切换输入法D返回桌面E资源管理器I设置界面M最小化所有窗口shift+M还原最小化的窗口L快速锁屏←→分屏↑↓放大缩小num(1,2,3..)打开任务栏第N个程序V剪贴板home最小化所有非当前窗口Ctrl +A全选F查找关键字X&#x2F;C&#x2F;V剪切&#x2F;复制&#x2F;粘贴Z撤销操作Y恢复上一步操作Shift+N新建文件夹Tab切换页面num切换到第N个页面N新建页面Shift+Esc任务管理器浏览器：R刷新页面T新建标签页W关闭页面shift+T恢复关闭的网页Tab同上num同上L光标定位到地址栏Shift + Delete删除文件，不放入回收站←→拉选文本Alt +Enter查看文件属性F4关闭应用Tab切换应用←→后退&#x2F;前进页面F数字区F2重命名F5刷新F11全屏F12浏览器审查元素&#x2F;调试界面PRTSC截屏，Ctrl+v应用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 快捷键 </tag>
             
         </tags>
       
