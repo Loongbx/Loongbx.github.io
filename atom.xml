@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Loongbx</title>
+  
+  <subtitle>和光同尘</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-10-14T13:38:36.340Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Loongbx</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>桌面壁纸</title>
+    <link href="http://example.com/2023/10/14/%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8/"/>
+    <id>http://example.com/2023/10/14/%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8/</id>
+    <published>2023-10-14T13:21:02.000Z</published>
+    <updated>2023-10-14T13:38:36.340Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;壁纸网站&quot;&gt;&lt;a href=&quot;#壁纸网站&quot; class=&quot;headerlink&quot; title=&quot;壁纸网站&quot;&gt;&lt;/a&gt;壁纸网站&lt;/h2&gt;&lt;p&gt;提供精选壁纸网站，免费下载，还有大量无版权图片提供使用  &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;网站&lt;</summary>
+      
+    
+    
+    
+    <category term="影音娱乐" scheme="http://example.com/categories/%E5%BD%B1%E9%9F%B3%E5%A8%B1%E4%B9%90/"/>
+    
+    
+    <category term="美化" scheme="http://example.com/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电气常识</title>
+    <link href="http://example.com/2022/11/06/%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86/"/>
+    <id>http://example.com/2022/11/06/%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86/</id>
+    <published>2022-11-06T14:15:43.000Z</published>
+    <updated>2023-10-14T14:03:52.650Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;电气常识&quot;&gt;&lt;a href=&quot;#电气常识&quot; class=&quot;headerlink&quot; title=&quot;电气常识&quot;&gt;&lt;/a&gt;电气常识&lt;/h2&gt;&lt;p&gt;短暂的重工业从业经验，虽然不喜欢其工作内容，但知识不愁无用，纯科普向。&lt;/p&gt;
+&lt;h3 id=&quot;常见概念&quot;&gt;&lt;a href=</summary>
+      
+    
+    
+    
+    <category term="常识" scheme="http://example.com/categories/%E5%B8%B8%E8%AF%86/"/>
+    
+    
+    <category term="电气" scheme="http://example.com/tags/%E7%94%B5%E6%B0%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker简介</title>
+    <link href="http://example.com/2022/11/05/Docker%E7%AE%80%E4%BB%8B/"/>
+    <id>http://example.com/2022/11/05/Docker%E7%AE%80%E4%BB%8B/</id>
+    <published>2022-11-05T05:26:59.000Z</published>
+    <updated>2023-10-14T13:50:26.260Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Docker简介&quot;&gt;&lt;a href=&quot;#Docker简介&quot; class=&quot;headerlink&quot; title=&quot;Docker简介&quot;&gt;&lt;/a&gt;Docker简介&lt;/h2&gt;&lt;p&gt;个人使用和配置Docer的一些经验总结&lt;/p&gt;
+&lt;h3 id=&quot;Docker功能&quot;&gt;&lt;a h</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://example.com/categories/IT/"/>
+    
+    
+    <category term="Docker,linux" scheme="http://example.com/tags/Docker-linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kali基础配置</title>
+    <link href="http://example.com/2022/09/08/Kali%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/2022/09/08/Kali%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-09-08T10:14:47.000Z</published>
+    <updated>2022-11-10T09:15:52.398Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Kali基础配置&quot;&gt;&lt;a href=&quot;#Kali基础配置&quot; class=&quot;headerlink&quot; title=&quot;Kali基础配置&quot;&gt;&lt;/a&gt;Kali基础配置&lt;/h2&gt;&lt;h3 id=&quot;获取root权限&quot;&gt;&lt;a href=&quot;#获取root权限&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="PC" scheme="http://example.com/categories/PC/"/>
+    
+    
+    <category term="kali,chrome" scheme="http://example.com/tags/kali-chrome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据分析（二）Excel</title>
+    <link href="http://example.com/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/"/>
+    <id>http://example.com/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/</id>
+    <published>2022-04-25T08:35:05.000Z</published>
+    <updated>2022-04-25T09:08:19.031Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;数据分析（二）Excel&quot;&gt;&lt;a href=&quot;#数据分析（二）Excel&quot; class=&quot;headerlink&quot; title=&quot;数据分析（二）Excel&quot;&gt;&lt;/a&gt;数据分析（二）Excel&lt;/h2&gt;&lt;h3 id=&quot;数据录入&quot;&gt;&lt;a href=&quot;#数据录入&quot; cla</summary>
+      
+    
+    
+    
+    <category term="办公软件" scheme="http://example.com/categories/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Excel，可视化" scheme="http://example.com/tags/Excel%EF%BC%8C%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透测试流程</title>
+    <link href="http://example.com/2022/04/10/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
+    <id>http://example.com/2022/04/10/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B/</id>
+    <published>2022-04-10T07:24:42.000Z</published>
+    <updated>2022-04-11T07:28:32.452Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;渗透测试流程&quot;&gt;&lt;a href=&quot;#渗透测试流程&quot; class=&quot;headerlink&quot; title=&quot;渗透测试流程&quot;&gt;&lt;/a&gt;渗透测试流程&lt;/h2&gt;&lt;h3 id=&quot;一、信息收集&quot;&gt;&lt;a href=&quot;#一、信息收集&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    <category term="网络安全" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="Shodan,Openvas,Nessus" scheme="http://example.com/tags/Shodan-Openvas-Nessus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kali工具使用</title>
+    <link href="http://example.com/2022/04/10/kali%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2022/04/10/kali%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-04-10T05:58:46.000Z</published>
+    <updated>2022-04-12T14:05:40.607Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Kali工具使用&quot;&gt;&lt;a href=&quot;#Kali工具使用&quot; class=&quot;headerlink&quot; title=&quot;Kali工具使用&quot;&gt;&lt;/a&gt;Kali工具使用&lt;/h2&gt;&lt;h3 id=&quot;NETCAT-NC&quot;&gt;&lt;a href=&quot;#NETCAT-NC&quot; class=&quot;he</summary>
+      
+    
+    
+    
+    <category term="网络安全" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="NC,MSF" scheme="http://example.com/tags/NC-MSF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CAD基础</title>
+    <link href="http://example.com/2022/03/05/CAD%E5%9F%BA%E7%A1%80/"/>
+    <id>http://example.com/2022/03/05/CAD%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:18:50.280Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;CAD基础&quot;&gt;&lt;a href=&quot;#CAD基础&quot; class=&quot;headerlink&quot; title=&quot;CAD基础&quot;&gt;&lt;/a&gt;CAD基础&lt;/h2&gt;&lt;p&gt;CAD基础命令&lt;/p&gt;
+&lt;h3 id=&quot;平面图绘制&quot;&gt;&lt;a href=&quot;#平面图绘制&quot; class=&quot;headerl</summary>
+      
+    
+    
+    
+    <category term="办公软件" scheme="http://example.com/categories/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="cad" scheme="http://example.com/tags/cad/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KODI访问网络位置</title>
+    <link href="http://example.com/2022/03/05/KODI%E8%AE%BF%E9%97%AE%E7%BD%91%E7%BB%9C%E4%BD%8D%E7%BD%AE/"/>
+    <id>http://example.com/2022/03/05/KODI%E8%AE%BF%E9%97%AE%E7%BD%91%E7%BB%9C%E4%BD%8D%E7%BD%AE/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:22:05.310Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;KODI访问网络位置&quot;&gt;&lt;a href=&quot;#KODI访问网络位置&quot; class=&quot;headerlink&quot; title=&quot;KODI访问网络位置&quot;&gt;&lt;/a&gt;KODI访问网络位置&lt;/h2&gt;&lt;p&gt;Kodi是一款免费开源的媒体播放器软件，使用此软件作为家庭影院的初阶尝试，实</summary>
+      
+    
+    
+    
+    <category term="影音娱乐" scheme="http://example.com/categories/%E5%BD%B1%E9%9F%B3%E5%A8%B1%E4%B9%90/"/>
+    
+    
+    <category term="kodi" scheme="http://example.com/tags/kodi/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux命令</title>
+    <link href="http://example.com/2022/03/05/Linux%E5%91%BD%E4%BB%A4/"/>
+    <id>http://example.com/2022/03/05/Linux%E5%91%BD%E4%BB%A4/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:22:34.190Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Linux命令&quot;&gt;&lt;a href=&quot;#Linux命令&quot; class=&quot;headerlink&quot; title=&quot;Linux命令&quot;&gt;&lt;/a&gt;Linux命令&lt;/h2&gt;&lt;p&gt;常用命令笔记&lt;/p&gt;
+&lt;h3 id=&quot;命令行快捷键&quot;&gt;&lt;a href=&quot;#命令行快捷键&quot; class</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://example.com/categories/IT/"/>
+    
+    
+    <category term="linux" scheme="http://example.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim基础使用</title>
+    <link href="http://example.com/2022/03/05/Vim%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2022/03/05/Vim%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2022-03-05T14:39:42.931Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Vim基础使用&quot;&gt;&lt;a href=&quot;#Vim基础使用&quot; class=&quot;headerlink&quot; title=&quot;Vim基础使用&quot;&gt;&lt;/a&gt;Vim基础使用&lt;/h2&gt;&lt;h3 id=&quot;Vim三种模式&quot;&gt;&lt;a href=&quot;#Vim三种模式&quot; class=&quot;headerlink</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://example.com/categories/IT/"/>
+    
+    
+    <category term="vim" scheme="http://example.com/tags/vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win7登录密码重置</title>
+    <link href="http://example.com/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/"/>
+    <id>http://example.com/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:23:38.890Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Win7登录密码重置&quot;&gt;&lt;a href=&quot;#Win7登录密码重置&quot; class=&quot;headerlink&quot; title=&quot;Win7登录密码重置&quot;&gt;&lt;/a&gt;Win7登录密码重置&lt;/h2&gt;&lt;p&gt;适用于win7老系统忘记密码后的重置。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;确认可行性</summary>
+      
+    
+    
+    
+    <category term="网络安全" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    
+    <category term="shift" scheme="http://example.com/tags/shift/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows快捷键</title>
+    <link href="http://example.com/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/"/>
+    <id>http://example.com/2022/03/05/Windows%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:26:07.740Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Windows快捷操作&quot;&gt;&lt;a href=&quot;#Windows快捷操作&quot; class=&quot;headerlink&quot; title=&quot;Windows快捷操作&quot;&gt;&lt;/a&gt;Windows快捷操作&lt;/h2&gt;&lt;p&gt;脱离使用电脑的小白阶段，尽量加大键盘的使用率，鼠标方便，但损失了效率</summary>
+      
+    
+    
+    
+    <category term="PC" scheme="http://example.com/categories/PC/"/>
+    
+    
+    <category term="快捷键" scheme="http://example.com/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人博客搭建</title>
+    <link href="http://example.com/2022/03/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>http://example.com/2022/03/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:04:28.550Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;个人博客搭建&quot;&gt;&lt;a href=&quot;#个人博客搭建&quot; class=&quot;headerlink&quot; title=&quot;个人博客搭建&quot;&gt;&lt;/a&gt;个人博客搭建&lt;/h2&gt;&lt;p&gt;利用hexo博客框架部署个人博客到github，操作简单，教程全面且易于获取，对新手较为友好。&lt;/p&gt;
+&lt;h</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://example.com/categories/IT/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>影视网站</title>
+    <link href="http://example.com/2022/03/05/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99/"/>
+    <id>http://example.com/2022/03/05/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T13:23:19.890Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;影视网站&quot;&gt;&lt;a href=&quot;#影视网站&quot; class=&quot;headerlink&quot; title=&quot;影视网站&quot;&gt;&lt;/a&gt;影视网站&lt;/h2&gt;&lt;h3 id=&quot;在线网站&quot;&gt;&lt;a href=&quot;#在线网站&quot; class=&quot;headerlink&quot; title=&quot;在线网站&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    <category term="影音娱乐" scheme="http://example.com/categories/%E5%BD%B1%E9%9F%B3%E5%A8%B1%E4%B9%90/"/>
+    
+    
+    <category term="tv" scheme="http://example.com/tags/tv/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手机软件</title>
+    <link href="http://example.com/2022/03/05/%E6%89%8B%E6%9C%BA%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://example.com/2022/03/05/%E6%89%8B%E6%9C%BA%E8%BD%AF%E4%BB%B6/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:17:09.370Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;手机软件&quot;&gt;&lt;a href=&quot;#手机软件&quot; class=&quot;headerlink&quot; title=&quot;手机软件&quot;&gt;&lt;/a&gt;手机软件&lt;/h2&gt;&lt;h3 id=&quot;软件商店&quot;&gt;&lt;a href=&quot;#软件商店&quot; class=&quot;headerlink&quot; title=&quot;软件商店:&quot;&gt;&lt;/</summary>
+      
+    
+    
+    
+    <category term="软件" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Memo" scheme="http://example.com/tags/Memo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>易经基础知识</title>
+    <link href="http://example.com/2022/03/05/%E6%98%93%E7%BB%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://example.com/2022/03/05/%E6%98%93%E7%BB%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2024-02-19T08:43:19.674Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;易经基础知识&quot;&gt;&lt;a href=&quot;#易经基础知识&quot; class=&quot;headerlink&quot; title=&quot;易经基础知识&quot;&gt;&lt;/a&gt;易经基础知识&lt;/h1&gt;&lt;h2 id=&quot;易经三个原则&quot;&gt;&lt;a href=&quot;#易经三个原则&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    <category term="古典文学" scheme="http://example.com/categories/%E5%8F%A4%E5%85%B8%E6%96%87%E5%AD%A6/"/>
+    
+    
+    <category term="易" scheme="http://example.com/tags/%E6%98%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电影收录</title>
+    <link href="http://example.com/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/"/>
+    <id>http://example.com/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-26T12:16:54.674Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;电影收录&quot;&gt;&lt;a href=&quot;#电影收录&quot; class=&quot;headerlink&quot; title=&quot;电影收录&quot;&gt;&lt;/a&gt;电影收录&lt;/h2&gt;&lt;p&gt;以下影单为本人看过且豆瓣评分普遍在8.0以上的电影，有历史，战争，人性，黑帮等题材的电影，有相同观影风格的朋友可以下载观看，</summary>
+      
+    
+    
+    
+    <category term="影音娱乐" scheme="http://example.com/categories/%E5%BD%B1%E9%9F%B3%E5%A8%B1%E4%B9%90/"/>
+    
+    
+    <category term="电影" scheme="http://example.com/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电脑软件</title>
+    <link href="http://example.com/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://example.com/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:03:56.740Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;电脑软件&quot;&gt;&lt;a href=&quot;#电脑软件&quot; class=&quot;headerlink&quot; title=&quot;电脑软件&quot;&gt;&lt;/a&gt;电脑软件&lt;/h2&gt;&lt;p&gt;电脑软件纷杂，为大家提供一些个人使用必不可少的效率和办公软件的集合。&lt;/p&gt;
+&lt;h3 id=&quot;浏览器&quot;&gt;&lt;a href=&quot;#</summary>
+      
+    
+    
+    
+    <category term="软件" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="tor" scheme="http://example.com/tags/tor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>金钱卦</title>
+    <link href="http://example.com/2022/03/05/%E9%87%91%E9%92%B1%E5%8D%A6/"/>
+    <id>http://example.com/2022/03/05/%E9%87%91%E9%92%B1%E5%8D%A6/</id>
+    <published>2022-03-05T12:32:25.000Z</published>
+    <updated>2023-10-14T14:07:46.680Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;金钱卦&quot;&gt;&lt;a href=&quot;#金钱卦&quot; class=&quot;headerlink&quot; title=&quot;金钱卦&quot;&gt;&lt;/a&gt;金钱卦&lt;/h2&gt;&lt;p&gt;金钱卦是古代卜筮方法中较为简单的一种，适合新手试玩，不过，卜筮难点不在起卦，断卦才是重中之重。自行摸索能力有限，始终不得入门！&lt;/p</summary>
+      
+    
+    
+    
+    <category term="古典文学" scheme="http://example.com/categories/%E5%8F%A4%E5%85%B8%E6%96%87%E5%AD%A6/"/>
+    
+    
+    <category term="易" scheme="http://example.com/tags/%E6%98%93/"/>
+    
+  </entry>
+  
+</feed>
