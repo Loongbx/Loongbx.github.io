@@ -340,7 +340,7 @@
     <link href="http://example.com/2022/03/05/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99/"/>
     <id>http://example.com/2022/03/05/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99/</id>
     <published>2022-03-05T12:32:25.000Z</published>
-    <updated>2023-10-14T13:23:19.890Z</updated>
+    <updated>2024-03-15T03:26:42.177Z</updated>
     
     
       
@@ -384,7 +384,7 @@
     <link href="http://example.com/2022/03/05/%E6%98%93%E7%BB%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     <id>http://example.com/2022/03/05/%E6%98%93%E7%BB%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
     <published>2022-03-05T12:32:25.000Z</published>
-    <updated>2024-02-19T09:31:06.954Z</updated>
+    <updated>2024-02-19T09:40:05.685Z</updated>
     
     
       
@@ -406,7 +406,7 @@
     <link href="http://example.com/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/"/>
     <id>http://example.com/2022/03/05/%E7%94%B5%E5%BD%B1%E6%94%B6%E5%BD%95/</id>
     <published>2022-03-05T12:32:25.000Z</published>
-    <updated>2023-10-26T12:16:54.674Z</updated>
+    <updated>2024-03-13T11:24:19.041Z</updated>
     
     
       
@@ -428,7 +428,7 @@
     <link href="http://example.com/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/"/>
     <id>http://example.com/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/</id>
     <published>2022-03-05T12:32:25.000Z</published>
-    <updated>2023-10-14T14:03:56.740Z</updated>
+    <updated>2024-02-22T06:03:36.646Z</updated>
     
     
       
@@ -447,24 +447,24 @@
   </entry>
   
   <entry>
-    <title>金钱卦</title>
-    <link href="http://example.com/2022/03/05/%E9%87%91%E9%92%B1%E5%8D%A6/"/>
-    <id>http://example.com/2022/03/05/%E9%87%91%E9%92%B1%E5%8D%A6/</id>
+    <title>高级搜索指令</title>
+    <link href="http://example.com/2022/03/05/%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/"/>
+    <id>http://example.com/2022/03/05/%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</id>
     <published>2022-03-05T12:32:25.000Z</published>
-    <updated>2023-10-14T14:07:46.680Z</updated>
+    <updated>2023-10-14T14:03:46.260Z</updated>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;金钱卦&quot;&gt;&lt;a href=&quot;#金钱卦&quot; class=&quot;headerlink&quot; title=&quot;金钱卦&quot;&gt;&lt;/a&gt;金钱卦&lt;/h2&gt;&lt;p&gt;金钱卦是古代卜筮方法中较为简单的一种，适合新手试玩，不过，卜筮难点不在起卦，断卦才是重中之重。自行摸索能力有限，始终不得入门！&lt;/p</summary>
+    <summary type="html">&lt;h2 id=&quot;百度高级搜索指令&quot;&gt;&lt;a href=&quot;#百度高级搜索指令&quot; class=&quot;headerlink&quot; title=&quot;百度高级搜索指令&quot;&gt;&lt;/a&gt;百度高级搜索指令&lt;/h2&gt;&lt;p&gt;日常的一些搜索引擎的用法，帮助使用者高效搜索到想要的答案，当然，搜索引擎不限于谷歌、百度、必</summary>
       
     
     
     
-    <category term="古典文学" scheme="http://example.com/categories/%E5%8F%A4%E5%85%B8%E6%96%87%E5%AD%A6/"/>
+    <category term="PC" scheme="http://example.com/categories/PC/"/>
     
     
-    <category term="易" scheme="http://example.com/tags/%E6%98%93/"/>
+    <category term="效率" scheme="http://example.com/tags/%E6%95%88%E7%8E%87/"/>
     
   </entry>
   
