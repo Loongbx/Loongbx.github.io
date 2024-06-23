@@ -1,0 +1,1219 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="数据分析（二）Excel, Loongbx">
+    <meta name="description" content="数据分析（二）Excel一、数据录入录入方式
+手动输入Tab横向移动单元格，Enter纵向移动单元格。Enter + Tab移动到下一行第一列，Shift + Tab&amp;#x2F;Enter回到上一单元格。    
+
+网络获取只能爬取简单结构">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>数据分析（二）Excel | Loongbx</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="Loongbx" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Loongbx</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Loongbx</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/Loongbx" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/Loongbx" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">数据分析（二）Excel</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Excel%EF%BC%8C%E5%8F%AF%E8%A7%86%E5%8C%96/">
+                                <span class="chip bg-color">Excel，可视化</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" class="post-category">
+                                办公软件
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-04-25
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    7 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="数据分析（二）Excel"><a href="#数据分析（二）Excel" class="headerlink" title="数据分析（二）Excel"></a>数据分析（二）Excel</h1><h2 id="一、数据录入"><a href="#一、数据录入" class="headerlink" title="一、数据录入"></a>一、数据录入</h2><h3 id="录入方式"><a href="#录入方式" class="headerlink" title="录入方式"></a>录入方式</h3><ol>
+<li><p>手动输入<br>Tab横向移动单元格，Enter纵向移动单元格。<br>Enter + Tab移动到下一行第一列，Shift + Tab&#x2F;Enter回到上一单元格。    </p>
+</li>
+<li><p>网络获取<br>只能爬取简单结构化数据：本身为表格形式。<br>数据→自网站→输入网址→选中区域→加载（全部刷新&#x2F;连接属性下可选实时刷新）。</p>
+</li>
+</ol>
+<h3 id="单元格格式"><a href="#单元格格式" class="headerlink" title="单元格格式"></a>单元格格式</h3><h4 id="1-原有格式操作"><a href="#1-原有格式操作" class="headerlink" title="1. 原有格式操作"></a>1. 原有格式操作</h4><ol>
+<li>清除格式：选中单元格→开始→编辑→清除→清除格式。  </li>
+<li>跨列居中：代替合并居中，保持原单元格，尽量避免合并居中。 </li>
+<li>自动换行：完整显示内容。  </li>
+<li>调整列宽：开始→格式→自动调整列宽，或者鼠标移动到列首右边线成十字左右箭头双击鼠标左键。</li>
+<li>复制粘贴后显示内容不一样→调整格式，输入分数：0+Space+1&#x2F;2。</li>
+<li>单元格实际内容为上方编辑栏内容，可自定义格式，加单位格式后仍可计算。</li>
+</ol>
+<h4 id="2-自定义格式"><a href="#2-自定义格式" class="headerlink" title="2. 自定义格式"></a>2. 自定义格式</h4><h5 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h5><ol>
+<li>#，0：数字占位符。</li>
+<li>@：文本占位符。</li>
+</ol>
+<h5 id="自定义方法"><a href="#自定义方法" class="headerlink" title="自定义方法"></a>自定义方法</h5><ol>
+<li>数字格式  <ul>
+<li><p>示例：0.00显示小数点后两位。 </p>
+</li>
+<li><p>示例：[红色][&gt;&#x3D;20]0;[蓝色][&lt;20]0;0<br>[红色]为颜色代码，&lt;&#x3D;&gt;为条件运算符（可做数据筛选）  </p>
+<p><img src="/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/%E9%A2%9C%E8%89%B2%E7%AD%9B%E9%80%89.gif"></p>
+</li>
+<li><p>示例：”正”0;”负”0;”零”0;@ 或者 ↑0;下0;空;@<br>数字格式4个区域，0;0;0;@ 依次为 正数;负数;零;文本</p>
+</li>
+</ul>
+</li>
+<li>文本格式    <ul>
+<li>示例：@”元”，单元格文本内容后附加显示元<br>@为文本占位符</li>
+</ul>
+</li>
+<li>时间格式  <ul>
+<li>示例：m  只显示月<br>y-m-d 改变ymd顺序和数量改变时间显示方式</li>
+</ul>
+</li>
+</ol>
+<h4 id="3-默认格式"><a href="#3-默认格式" class="headerlink" title="3. 默认格式"></a>3. 默认格式</h4><ol>
+<li>文本默认左对齐，数字默认右对齐，状态值默认居中（true&#x2F;false）。  </li>
+<li>日期格式：2022-01-01或者2022&#x2F;01&#x2F;01（但别用日期格式存储日期）。</li>
+</ol>
+<h2 id="二、数据处理"><a href="#二、数据处理" class="headerlink" title="二、数据处理"></a>二、数据处理</h2><h3 id="数据验证"><a href="#数据验证" class="headerlink" title="数据验证"></a>数据验证</h3><ol>
+<li>规范数据输入内容<ul>
+<li>示例：选中单元格→数据→数据工具→数据验证→验证条件→序列（序列内容）<br>可实现填写数据时出现下拉列表。</li>
+</ul>
+</li>
+<li>数据验证后可圈选不合格数据。</li>
+</ol>
+<h3 id="条件格式"><a href="#条件格式" class="headerlink" title="条件格式"></a>条件格式</h3><ol>
+<li>开始→样式→条件格式<br>突出显示符合条件的单元格。</li>
+</ol>
+<p>查找&#x2F;定位</p>
+<ol>
+<li>开始→查找和选择→转到&#x2F;定位条件  <ul>
+<li>查找只能确定具体单元格，定位可寻找符合条件的所有单元格再进行操作。  </li>
+<li>可以先选中区域再进行查找（Ctrl+F），不影响其他区域。  </li>
+<li>打开查找选项，有更详细的查找功能，可查到全部并替换全部。  </li>
+<li>查找&#x2F;替换可结合通配符使用。</li>
+</ul>
+</li>
+</ol>
+<h3 id="排序-x2F-筛选"><a href="#排序-x2F-筛选" class="headerlink" title="排序&#x2F;筛选"></a>排序&#x2F;筛选</h3><h4 id="1-排序"><a href="#1-排序" class="headerlink" title="1. 排序"></a>1. 排序</h4><ol>
+<li>数字排序：点选需要排序列的任一单元格，点击排序可实现快速排序。</li>
+<li>文本排序：默认首字母排序，可选笔划和自定义排序。</li>
+</ol>
+<h4 id="2-筛选"><a href="#2-筛选" class="headerlink" title="2. 筛选"></a>2. 筛选</h4><ol>
+<li>文本筛选：可连续筛选，第二次筛选将“添加到筛选器”框选。  </li>
+<li>数字筛选：可点击筛选，也可以使用RANK()函数。</li>
+</ol>
+<h3 id="拆分"><a href="#拆分" class="headerlink" title="拆分"></a>拆分</h3><p>位置：数据→数据工具→分列</p>
+<ol>
+<li>选中区域分列，单元格内容为中文时可先转文本再分列，功能在分列向导下。</li>
+<li>利用函数拆分<ul>
+<li>示例：将数据”1234人”文本和数字拆分，只要数字，数据单元格为E2<br>&#x3D;LEFT(E2,LEN(E2)*2-LENB(E2))<br>函数中嵌套LEN()和LENB()函数，LEN统计为5，LENB为6（文本占两个字符）</li>
+</ul>
+</li>
+</ol>
+<h3 id="公式-x2F-函数"><a href="#公式-x2F-函数" class="headerlink" title="公式&#x2F;函数"></a>公式&#x2F;函数</h3><p>位置：开始→公式（所有公式和函数）  </p>
+<h4 id="1-公式"><a href="#1-公式" class="headerlink" title="1. 公式"></a>1. 公式</h4><ol>
+<li>求和<ul>
+<li>示例：&#x3D;A1+K1 第一行求和<br>快捷键：拉选区域→Alt+&#x3D;→快速求和</li>
+</ul>
+</li>
+<li>求积<ul>
+<li>示例：&#x3D;A1*2</li>
+</ul>
+</li>
+<li>合并单元格<ul>
+<li>示例：&#x3D;A2 &amp; B$1 &amp; B2<br>合并多个单元格的内容，B$1为B列的列名</li>
+</ul>
+</li>
+</ol>
+<h4 id="2-函数"><a href="#2-函数" class="headerlink" title="2. 函数"></a>2. 函数</h4><ol>
+<li>输入函数名→Ctrl+A 调出详细函数参数。</li>
+<li>点击单元格→编辑栏显示行列→A1&#x2F;B2→行列前加$可固定行&#x2F;列 相对引用&#x2F;绝对引用。<ul>
+<li>示例：&#x3D;$A1*B$2 固定第A列，第2行 练习方法：九九乘法表</li>
+</ul>
+</li>
+</ol>
+<h5 id="统计函数"><a href="#统计函数" class="headerlink" title="统计函数"></a>统计函数</h5><ol>
+<li>COUNT:计算区域中包含数字的单元格的个数。<br>COUNTA:计算区域中包含非空单元格的个数。<br>COUNTBLANK:计算区域中空单元格的数目。<br>COUNTIFS:多条件判断。<br>COUNTIF:计算区域中符合条件单元格的数目。    <ul>
+<li>示例：&#x3D;COUNTIF(A1:A15,”张*”) 统计区域中姓张人数<br>统计文本内容时，用到通配符*,?,~,三个分别为任意多个字符，任意一个字符，转义字符</li>
+</ul>
+</li>
+</ol>
+<h5 id="求和函数"><a href="#求和函数" class="headerlink" title="求和函数"></a>求和函数</h5><ol>
+<li>SUM:求和。<br>SUMIF:附加条件的求和,(Range,Criteria,Sum_range)参数分别为判断区域，判断条件，求和范围。<br>SUMPRODUCT:数组相乘求和。  <ul>
+<li>示例：&#x3D;SUMPRODUCT(A2:A10,SUMIF(B2:B20),判断条件&#x2F;列，C2:C20)<br>函数嵌套后结果行数与主函数函数相等，数组分别相乘求和</li>
+</ul>
+</li>
+<li>AVERAGE:求平均数。<br>AVERAGEIF:附加条件的求平均值。  </li>
+<li>SUBTOTAL:11个可选求值参数，原数据筛选后返回值实时更新。</li>
+</ol>
+<h5 id="其它函数"><a href="#其它函数" class="headerlink" title="其它函数"></a>其它函数</h5><ol>
+<li>IF：判断函数。<ul>
+<li>示例：IF:(A1&gt;0,”大于0”,”小于0”) 可嵌套使用。</li>
+</ul>
+</li>
+<li>MATCH:定位单元格。  </li>
+<li>INDEX:返回指定单元格值。</li>
+</ol>
+<h3 id="图表可视化"><a href="#图表可视化" class="headerlink" title="图表可视化"></a>图表可视化</h3><h4 id="1-插入图表"><a href="#1-插入图表" class="headerlink" title="1. 插入图表"></a>1. 插入图表</h4><ol>
+<li>点选表中任一单元格→插入数据透视表→将字段拖入视图（右下角）→在透视表插入所需图表。</li>
+<li>插入切片器→选择字段：进一步筛选并更新图表，切片器全局有效。</li>
+</ol>
+<h2 id="三、打印"><a href="#三、打印" class="headerlink" title="三、打印"></a>三、打印</h2><ol>
+<li>打印选中区域<br>文件→打印→设置→打印选中区域</li>
+<li>打印完整页面<br>文件→打印→设置→缩放或者调整页边距实现打印完整页面</li>
+<li>居中打印<br>文件→打印→设置→页面设置→页边距→居中方式→水平+垂直</li>
+<li>分页打印标题<br>页面布局→页面设置→启动器（右下三角）→工作表→拉选顶端标题行</li>
+</ol>
+<h2 id="四、快捷键"><a href="#四、快捷键" class="headerlink" title="四、快捷键"></a>四、快捷键</h2><h3 id="实用快捷键"><a href="#实用快捷键" class="headerlink" title="实用快捷键"></a>实用快捷键</h3><h4 id="Ctrl-方向键：快速定位-x2F-选择"><a href="#Ctrl-方向键：快速定位-x2F-选择" class="headerlink" title="Ctrl + 方向键：快速定位&#x2F;选择"></a>Ctrl + 方向键：快速定位&#x2F;选择</h4><ol>
+<li>选中第一个单元格，Shift+第二个单元格，快速选中对角区域。<br>shift选中首尾可实现连选。   </li>
+<li>Ctrl+方向键，快速跳转到最*端。</li>
+<li>Ctrl+Shift+方向键，选中整行&#x2F;列。</li>
+</ol>
+<p><img src="/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E9%80%89%E6%8B%A9.gif"></p>
+<h4 id="Ctrl-E：快速填充"><a href="#Ctrl-E：快速填充" class="headerlink" title="Ctrl + E：快速填充"></a>Ctrl + E：快速填充</h4><p>填写第一行后，Ctrl+E<strong>快速填充</strong>,可实现功能：提取，合并，拆分，重组。简单规律数据填写一个便可填充，稍复杂的可多手动填写几个数据。</p>
+<p>鼠标移动到单元格右下角成十字下拉填充，也可实现快速填充，Ctrl + 下拉可实现序列填充，单独下拉可以继承公式。F4锁定行列，公式和函数中使用，可按三次 $，下拉填充函数出错时，考虑相对引用&#x2F;绝对引用。</p>
+<ul>
+<li><p>提取：</p>
+<p><img src="/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/%E6%8F%90%E5%8F%96.gif"></p>
+</li>
+<li><p>合并：</p>
+<p><img src="/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/%E5%90%88%E5%B9%B6.gif"></p>
+</li>
+<li><p>拆分：</p>
+<p><img src="/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/%E6%8B%86%E5%88%86.gif"></p>
+</li>
+<li><p>重组：</p>
+<p><img src="/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/%E9%87%8D%E7%BB%84.gif"></p>
+</li>
+</ul>
+<h4 id="Ctrl-G：定位"><a href="#Ctrl-G：定位" class="headerlink" title="Ctrl + G：定位"></a>Ctrl + G：定位</h4><ul>
+<li><p>定位空行</p>
+<p>实现对空行批量操作，删除，填充，求和等。</p>
+</li>
+<li><p>定位行、列内容差异单元格</p>
+</li>
+</ul>
+<h4 id="Alt-x3D-：快速求和"><a href="#Alt-x3D-：快速求和" class="headerlink" title="Alt + &#x3D;：快速求和"></a>Alt + &#x3D;：快速求和</h4><p>可先拉选区域→Alt+&#x3D;→快速求和，也可先快速求和再选择区域。</p>
+<p><img src="/2022/04/25/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89Excel/%E5%BF%AB%E9%80%9F%E6%B1%82%E5%92%8C.gif"></p>
+<h4 id="Ctrl-q：快速分析"><a href="#Ctrl-q：快速分析" class="headerlink" title="Ctrl + q：快速分析"></a>Ctrl + q：快速分析</h4><p>格式化、图标、汇总、表格、迷你图，具体功能可以参考弹出界面。</p>
+<h4 id="Ctrl-1：设置单元格格式"><a href="#Ctrl-1：设置单元格格式" class="headerlink" title="Ctrl + 1：设置单元格格式"></a>Ctrl + 1：设置单元格格式</h4><h4 id="Ctrl-Enter：原位填充"><a href="#Ctrl-Enter：原位填充" class="headerlink" title="Ctrl + Enter：原位填充"></a>Ctrl + Enter：原位填充</h4><p>所有选中的单元格执行一样的操作。</p>
+<h4 id="Ctrl-：显示表中的公式"><a href="#Ctrl-：显示表中的公式" class="headerlink" title="Ctrl + ~：显示表中的公式"></a>Ctrl + ~：显示表中的公式</h4><p>按一次显示表中所有公式，再按一次恢复（可定位）。  </p>
+<h4 id="Ctrl-F-x2F-H：查找-x2F-替换"><a href="#Ctrl-F-x2F-H：查找-x2F-替换" class="headerlink" title="Ctrl + F&#x2F;H：查找&#x2F;替换"></a>Ctrl + F&#x2F;H：查找&#x2F;替换</h4><h4 id="Ctrl-Shift-L：筛选"><a href="#Ctrl-Shift-L：筛选" class="headerlink" title="Ctrl + Shift + L：筛选"></a>Ctrl + Shift + L：筛选</h4><p>按一次进入筛选界面，再按一次退出。</p>
+<h4 id="Ctrl-PgUp-x2F-PgDn"><a href="#Ctrl-PgUp-x2F-PgDn" class="headerlink" title="Ctrl + PgUp&#x2F;PgDn"></a>Ctrl + PgUp&#x2F;PgDn</h4><p>切换工作表。</p>
+<h4 id="Ctrl-和-Ctrl-Shift"><a href="#Ctrl-和-Ctrl-Shift" class="headerlink" title="Ctrl + ; 和 Ctrl + Shift + ;"></a>Ctrl + ; 和 Ctrl + Shift + ;</h4><p>显示日期和时间。</p>
+<h4 id="Ctrl-p：打印"><a href="#Ctrl-p：打印" class="headerlink" title="Ctrl + p：打印"></a>Ctrl + p：打印</h4><p>通用打印快捷键。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Excel%EF%BC%8C%E5%8F%AF%E8%A7%86%E5%8C%96/">
+                                    <span class="chip bg-color">Excel，可视化</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/09/08/Kali%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Kali基础配置">
+                        
+                        <span class="card-title">Kali基础配置</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/PC/" class="post-category">
+                                    PC
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/kali-chrome/">
+                        <span class="chip bg-color">kali,chrome</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/10/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="渗透测试流程">
+                        
+                        <span class="card-title">渗透测试流程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="post-category">
+                                    网络安全
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Shodan-Openvas-Nessus/">
+                        <span class="chip bg-color">Shodan,Openvas,Nessus</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('5'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2024</span>
+            
+            <a href="/about" target="_blank">Loongbx</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">29.1k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Loongbx" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2516369066@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2516369066" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2516369066" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
