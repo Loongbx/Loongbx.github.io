@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-06-22T07:42:16.935Z</updated>
+  <updated>2024-12-26T05:50:45.696Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ERP（Enterprise Resource Planning企业资源管理）</title>
+    <link href="http://example.com/2024/12/26/ERP%EF%BC%88Enterprise-Resource-Planning%E4%BC%81%E4%B8%9A%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%EF%BC%89/"/>
+    <id>http://example.com/2024/12/26/ERP%EF%BC%88Enterprise-Resource-Planning%E4%BC%81%E4%B8%9A%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%EF%BC%89/</id>
+    <published>2024-12-26T05:46:30.000Z</published>
+    <updated>2024-12-26T05:50:45.696Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;ERP（Enterprise-Resource-Planning企业资源管理）&quot;&gt;&lt;a href=&quot;#ERP（Enterprise-Resource-Planning企业资源管理）&quot; class=&quot;headerlink&quot; title=&quot;ERP（Enterprise</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://example.com/categories/IT/"/>
+    
+    
+    <category term="ERP" scheme="http://example.com/tags/ERP/"/>
+    
+  </entry>
   
   <entry>
     <title>少儿军事启蒙（二）</title>
@@ -439,30 +461,6 @@
     
     
     <category term="vim" scheme="http://example.com/tags/vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Win7登录密码重置</title>
-    <link href="http://example.com/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/"/>
-    <id>http://example.com/2022/03/05/Win7%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/</id>
-    <published>2022-03-05T12:32:25.000Z</published>
-    <updated>2024-06-22T07:42:16.935Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Win7登录密码重置&quot;&gt;&lt;a href=&quot;#Win7登录密码重置&quot; class=&quot;headerlink&quot; title=&quot;Win7登录密码重置&quot;&gt;&lt;/a&gt;Win7登录密码重置&lt;/h2&gt;&lt;p&gt;适用于win7老系统忘记密码后的重置。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;确认可行性</summary>
-      
-    
-    
-    
-    <category term="网络安全" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-    <category term="shift" scheme="http://example.com/tags/shift/"/>
     
   </entry>
   
