@@ -392,8 +392,8 @@ Do">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Docker-linux/">
-                                <span class="chip bg-color">Docker,linux</span>
+                            <a href="/tags/Docker-linux%EF%BC%8Cssh/">
+                                <span class="chip bg-color">Docker,linux，ssh</span>
                             </a>
                         
                     </div>
@@ -426,14 +426,14 @@ Do">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    678
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -456,12 +456,12 @@ Do">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Docker简介"><a href="#Docker简介" class="headerlink" title="Docker简介"></a>Docker简介</h2><p>个人使用和配置Docer的一些经验总结</p>
-<h3 id="Docker功能"><a href="#Docker功能" class="headerlink" title="Docker功能"></a>Docker功能</h3><ol>
+                <h1 id="Docker简介"><a href="#Docker简介" class="headerlink" title="Docker简介"></a>Docker简介</h1><p>个人使用和配置Docer的一些经验总结</p>
+<h2 id="Docker功能"><a href="#Docker功能" class="headerlink" title="Docker功能"></a>Docker功能</h2><ol>
 <li>Docker可以理解为一个高效，轻量，可移植性强的VM（Virtual Machine）。  </li>
 <li>可实现应用集（应用程序，运行环境，配置等）的打包，分发，部署。</li>
 </ol>
-<h3 id="Docker架构"><a href="#Docker架构" class="headerlink" title="Docker架构"></a>Docker架构</h3><table>
+<h2 id="Docker架构"><a href="#Docker架构" class="headerlink" title="Docker架构"></a>Docker架构</h2><table>
 <thead>
 <tr>
 <th>组成部分</th>
@@ -493,14 +493,49 @@ Do">
 <td>一个简化Docker安装的命令行工具</td>
 </tr>
 </tbody></table>
-<h3 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h3><ol>
-<li>不同系统下Docker安装：<a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-tutorial.html">安装教程</a>  </li>
-<li>Kali下安装Docker：<a target="_blank" rel="noopener" href="https://www.sqlsec.com/2019/10/docker2.html">安装教程</a></li>
-</ol>
-<h3 id="Docker使用"><a href="#Docker使用" class="headerlink" title="Docker使用"></a>Docker使用</h3><h4 id="容器使用"><a href="#容器使用" class="headerlink" title="容器使用"></a>容器使用</h4><pre class="line-numbers language-none"><code class="language-none">docker run -itd ubuntu &#x2F;bin&#x2F;bash 启动一个容器，以命令行模式进入
+<h2 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h2><h3 id="1-添加apt源，提供docker下载地址"><a href="#1-添加apt源，提供docker下载地址" class="headerlink" title="1. 添加apt源，提供docker下载地址"></a>1. 添加apt源，提供docker下载地址</h3><pre class="line-numbers language-none"><code class="language-none">vim &#x2F;etc&#x2F;apt&#x2F;sources.list	编辑apt源文件
+
+#添加阿里源
+
+#阿里云
+deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;kali kali-rolling main non-free contrib
+deb-src http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;kali kali-rolling main non-free contrib 
+
+#更新源和系统
+apt-get update &amp;&amp; apt-get upgrade
+#清理更新缓存
+apt-get clean<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2-安装docker"><a href="#2-安装docker" class="headerlink" title="2. 安装docker"></a>2. 安装docker</h3><pre class="line-numbers language-none"><code class="language-none">#命令安装，有可能找不到docker安装包就执行下面指令
+apt-get install docker docker-compose
+#或
+apt-get install docker.io
+
+#检验docker安装结果
+#启动docker服务
+service start docker
+#显示版本
+docker version
+#列出镜像
+docker images
+#设置docker开机自启
+systemctl enable docker
+
+#优化docker配置文件，加速访问DockerHub,也可配置阿里云镜像加速（非必要，可检查）
+vim &#x2F;etc&#x2F;docker&#x2F;daemon.json
+#添加&#123;&quot;registry-mirrors&quot;:[&quot;https:&#x2F;&#x2F;docker.1panelproxy.com&quot;]&#125;
+
+#case1:笔记本关闭屏幕仍正常运行的配置
+vim &#x2F;etc&#x2F;systemd&#x2F;logind.conf  
+#找到 #HandleLidSwitch&#x3D;suspend 一行，取消注释，将suspend改为ignore）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="Docker使用"><a href="#Docker使用" class="headerlink" title="Docker使用"></a>Docker使用</h2><h3 id="容器使用"><a href="#容器使用" class="headerlink" title="容器使用"></a>容器使用</h3><pre class="line-numbers language-none"><code class="language-none">docker run -itd -p 3000:3000 ubuntu &#x2F;bin&#x2F;bash 启动一个容器，以命令行模式进入
     -i          交互式操作
     -t          终端  
     -d          后台运行
+    -p			做端口映射，防止内网访问失败
     -v          指定映射文件夹(类网盘工具挂载目录)： &#x2F;root&#x2F;back:&#x2F;back
     ubuntu      镜像名称
     &#x2F;bin&#x2F;bash   指定shell类型  
@@ -517,8 +552,8 @@ docker export &lt;容器ID&gt; &gt; 快照.tar                       导出容�
 cat docker&#x2F;快照.tar | docker import - test&#x2F;ubuntu:v1    从快照文件导入到ubuntu镜像
 docker import http:&#x2F;&#x2F;example.com&#x2F;exampleimages.tgz example&#x2F;image11  通过URL或目录导入 
 
-docker rm -f &lt;容器ID&gt;       删除容器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="镜像使用"><a href="#镜像使用" class="headerlink" title="镜像使用"></a>镜像使用</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker images   列出已有镜像
+docker rm -f &lt;容器ID&gt;       删除容器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="镜像使用"><a href="#镜像使用" class="headerlink" title="镜像使用"></a>镜像使用</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">docker images   列出已有镜像
     REPOSITORY：镜像的仓库源
     TAG:        镜像的标签
     IMAGE ID:   镜像ID
@@ -534,11 +569,28 @@ docker rmi &lt;镜像名&gt;         删除镜像
 docker save -o 镜像文件名.tar       保存离线镜像
 docker load -input 镜像文件名.tar   导入离线镜像<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="宝塔面板"><a href="#宝塔面板" class="headerlink" title="宝塔面板"></a>宝塔面板</h3><h4 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h4><ol>
-<li>官网-&gt;下载-&gt;安装脚本  <h4 id="开启-x2F-关闭服务"><a href="#开启-x2F-关闭服务" class="headerlink" title="开启&#x2F;关闭服务"></a>开启&#x2F;关闭服务</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&#x2F;etc&#x2F;init.d&#x2F;bt start    启动宝塔面板
+<h2 id="宝塔面板"><a href="#宝塔面板" class="headerlink" title="宝塔面板"></a>宝塔面板</h2><h3 id="1-1Panel安装和使用"><a href="#1-1Panel安装和使用" class="headerlink" title="1. 1Panel安装和使用"></a>1. 1Panel安装和使用</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><pre class="line-numbers language-none"><code class="language-none">#需前置安装docker
+curl -sSL https:&#x2F;&#x2F;resource.fit2cloud.com&#x2F;1panel&#x2F;package&#x2F;quick_start.sh -o quick_start.sh &amp;&amp; bash quick_start.sh
+#配置安装目录、运行端口、用户名和密码等<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p><img src="/2022/11/05/Docker%E7%AE%80%E4%BB%8B/1Panel.png"></p>
+<h5 id="ssh连接主系统"><a href="#ssh连接主系统" class="headerlink" title="ssh连接主系统"></a>ssh连接主系统</h5><pre class="line-numbers language-none"><code class="language-none">#重置root密码
+sudo passwd root
+#编辑ssh配置文件
+vim &#x2F;etc&#x2F;ssh&#x2F;sshd_config
+#将#PasswordAuthentication  no 一行去掉注释符，no改为yes
+#将#PermitRootLogin prohibit-password 一行去掉注释符，prohibit-password改为yes
+#重启ssh服务
+systemctl ssh restart
+#或
+service ssh restart <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="图形化界面操作"><a href="#图形化界面操作" class="headerlink" title="图形化界面操作"></a>图形化界面操作</h5><p>系统-ssh管理，重启ssh服务并打开开机自启开关，关闭密钥认证（暂时不需要安全考量）  </p>
+<p>对docker的操作可在[容器]界面操作</p>
+<h3 id="2-安装宝塔（弃）"><a href="#2-安装宝塔（弃）" class="headerlink" title="2. 安装宝塔（弃）"></a>2. 安装宝塔（弃）</h3><ol>
+<li>官网-&gt;下载-&gt;安装脚本  <h3 id="开启-x2F-关闭服务"><a href="#开启-x2F-关闭服务" class="headerlink" title="开启&#x2F;关闭服务"></a>开启&#x2F;关闭服务</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&#x2F;etc&#x2F;init.d&#x2F;bt start    启动宝塔面板
 &#x2F;etc&#x2F;init.d&#x2F;bt stop     停止宝塔面板服务
-&#x2F;etc&#x2F;init.d&#x2F;bt restart  重启宝塔面板服务<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h4 id="配置宝塔"><a href="#配置宝塔" class="headerlink" title="配置宝塔"></a>配置宝塔</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">bt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+&#x2F;etc&#x2F;init.d&#x2F;bt restart  重启宝塔面板服<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ol>
 
                 
@@ -554,8 +606,8 @@ docker load -input 镜像文件名.tar   导入离线镜像<span aria-hidden="tr
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Docker-linux/">
-                                    <span class="chip bg-color">Docker,linux</span>
+                                <a href="/tags/Docker-linux%EF%BC%8Cssh/">
+                                    <span class="chip bg-color">Docker,linux，ssh</span>
                                 </a>
                             
                         </div>
@@ -887,7 +939,7 @@ docker load -input 镜像文件名.tar   导入离线镜像<span aria-hidden="tr
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2024</span>
+                <span id="year">2019-2025</span>
             
             <a href="/about" target="_blank">Loongbx</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -895,7 +947,7 @@ docker load -input 镜像文件名.tar   导入离线镜像<span aria-hidden="tr
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">29.6k</span>
+                        class="white-color">30k</span>
             
             
             
