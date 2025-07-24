@@ -504,31 +504,6 @@
     
     
     <entry>
-      <title>KODI访问网络位置</title>
-      <link href="/2022/03/05/KODI%E8%AE%BF%E9%97%AE%E7%BD%91%E7%BB%9C%E4%BD%8D%E7%BD%AE/"/>
-      <url>/2022/03/05/KODI%E8%AE%BF%E9%97%AE%E7%BD%91%E7%BB%9C%E4%BD%8D%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<h2 id="KODI访问网络位置"><a href="#KODI访问网络位置" class="headerlink" title="KODI访问网络位置"></a>KODI访问网络位置</h2><p>Kodi是一款免费开源的媒体播放器软件，使用此软件作为家庭影院的初阶尝试，实现了电脑（服务器）端媒体文件的局域网内共享。</p><h3 id="计算机开启SMB服务"><a href="#计算机开启SMB服务" class="headerlink" title="计算机开启SMB服务"></a>计算机开启SMB服务</h3><ol><li>网络和Internet——&gt;网络和共享中心——&gt;高级共享设置——&gt;启用网络发现和文件&#x2F;打印机<br>所有网络——&gt;公用文件夹共享——&gt;启用共享  </li><li>右键我的电脑——&gt;管理——&gt;本地用户和组——&gt;用户——&gt;右键新建用户——&gt;配置用户名密码  </li><li>选中共享文件夹——&gt;右键属性——&gt;共享——&gt;添加新建用户名——&gt;配置权限——&gt;共享<h3 id="KODI添加视频源"><a href="#KODI添加视频源" class="headerlink" title="KODI添加视频源"></a>KODI添加视频源</h3></li><li>设置——&gt;Interface——&gt;SKIN——&gt;Fonts——&gt;Arial,Regional——&gt;Language——&gt;中文</li><li>电影——&gt;进入文件区——&gt;添加视频——&gt;浏览——&gt;添加网络位置——&gt;服务器名称填计算机IP——&gt;填写用户名密码<h3 id="KODI添加直播源"><a href="#KODI添加直播源" class="headerlink" title="KODI添加直播源"></a>KODI添加直播源</h3></li><li>插件——&gt;下载——&gt;安装PVR IPTVSimple Client<br> 插件——&gt;我的插件——&gt;PVR客户端——&gt;PVR IPTVSimple Client——&gt;设置——&gt;填写m3u播放列表URL</li><li>直播源URL：<a href="https://github.com/iptv-org/iptv">https://github.com/iptv-org/iptv</a></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 影音娱乐 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> kodi </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Linux命令</title>
       <link href="/2022/03/05/Linux%E5%91%BD%E4%BB%A4/"/>
       <url>/2022/03/05/Linux%E5%91%BD%E4%BB%A4/</url>
@@ -771,6 +746,31 @@
         <tags>
             
             <tag> tor </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电视盒子</title>
+      <link href="/2022/03/05/%E7%94%B5%E8%A7%86%E7%9B%92%E5%AD%90/"/>
+      <url>/2022/03/05/%E7%94%B5%E8%A7%86%E7%9B%92%E5%AD%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="电视盒子"><a href="#电视盒子" class="headerlink" title="电视盒子"></a>电视盒子</h1><h2 id="系统固件选择"><a href="#系统固件选择" class="headerlink" title="系统固件选择"></a>系统固件选择</h2><ol><li>YYF</li><li>Rush</li><li>LiliN</li><li>Webpad<h2 id="必备软件"><a href="#必备软件" class="headerlink" title="必备软件"></a>必备软件</h2></li></ol><ul><li>ES文件浏览器（ftp服务）</li><li>TVbox（空壳）</li><li>野草助手（应用商店）</li><li>Kodi（PC,NAS）</li><li>Clash（科学上网）</li><li>Termux</li></ul><h2 id="Termux教程"><a href="#Termux教程" class="headerlink" title="Termux教程"></a>Termux教程</h2><p>安卓设备中的linux运行环境，可安装Ubuntu，kali等常见linux系统。</p><h3 id="安装配置ssh"><a href="#安装配置ssh" class="headerlink" title="安装配置ssh"></a>安装配置ssh</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">移动设备安装ssh：pkg <span class="token function">install</span> openssh  /安装ssh<span class="token function">passwd</span>  /设置密码sshd /启动<span class="token function">vim</span> .bashrc<span class="token builtin class-name">echo</span> sshd <span class="token operator">>></span> .bashrc /开机自启PC端windows terminal连接：新建配置文件--<span class="token operator">></span>配置命令<span class="token function">ssh</span> <span class="token number">192.168</span>.1.2 -p <span class="token number">8022</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="KODI教程"><a href="#KODI教程" class="headerlink" title="KODI教程"></a>KODI教程</h2><p>Kodi是一款免费开源的媒体播放器软件，使用此软件作为家庭影院的初阶尝试，实现了电脑（服务器）端媒体文件的局域网内共享。</p><h3 id="PC开启-x2F-关闭共享"><a href="#PC开启-x2F-关闭共享" class="headerlink" title="PC开启&#x2F;关闭共享"></a>PC开启&#x2F;关闭共享</h3><h4 id="开启"><a href="#开启" class="headerlink" title="开启"></a>开启</h4><ol><li>网络和Internet——&gt;网络和共享中心——&gt;高级共享设置——&gt;启用网络发现和文件&#x2F;打印机<br>所有网络——&gt;公用文件夹共享——&gt;启用共享 </li><li>右键我的电脑——&gt;管理——&gt;本地用户和组——&gt;用户——&gt;右键新建用户——&gt;配置用户名密码 </li><li>选中共享文件夹——&gt;右键属性——&gt;共享——&gt;添加新建用户名——&gt;配置权限——&gt;共享<h4 id="关闭"><a href="#关闭" class="headerlink" title="关闭"></a>关闭</h4></li><li>右键我的电脑——&gt;管理——&gt;共享文件夹——&gt;共享——&gt;选中文件夹——&gt;右键停止共享</li></ol><h3 id="KODI添加视频源"><a href="#KODI添加视频源" class="headerlink" title="KODI添加视频源"></a>KODI添加视频源</h3><ol><li>设置——&gt;Interface——&gt;SKIN——&gt;Fonts——&gt;Arial,Regional——&gt;Language——&gt;中文</li><li>电影——&gt;进入文件区——&gt;添加视频——&gt;浏览——&gt;添加网络位置——&gt;服务器名称填计算机IP——&gt;填写用户名密码</li></ol><h3 id="KODI添加直播源"><a href="#KODI添加直播源" class="headerlink" title="KODI添加直播源"></a>KODI添加直播源</h3><ol><li>插件——&gt;下载——&gt;安装PVR IPTVSimple Client<br> 插件——&gt;我的插件——&gt;PVR客户端——&gt;PVR IPTVSimple Client——&gt;设置——&gt;填写m3u播放列表URL</li><li>直播源URL：<a href="https://github.com/iptv-org/iptv">https://github.com/iptv-org/iptv</a></li></ol><h2 id="教育资源"><a href="#教育资源" class="headerlink" title="教育资源"></a>教育资源</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 影音娱乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> kodi </tag>
             
         </tags>
       

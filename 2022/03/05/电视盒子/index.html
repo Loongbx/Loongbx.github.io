@@ -4,10 +4,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="KODI访问网络位置, Loongbx">
-    <meta name="description" content="KODI访问网络位置Kodi是一款免费开源的媒体播放器软件，使用此软件作为家庭影院的初阶尝试，实现了电脑（服务器）端媒体文件的局域网内共享。
-计算机开启SMB服务
-网络和Internet——&amp;gt;网络和共享中心——&amp;gt;高级共享设置——">
+    <meta name="keywords" content="电视盒子, Loongbx">
+    <meta name="description" content="电视盒子系统固件选择
+YYF
+Rush
+LiliN
+Webpad必备软件
+
+
+ES文件浏览器（ftp服务）
+TVbox（空壳）
+野草助手（应用商店）
+Kodi（PC,NAS）
+Clash（科学上网）
+Termux
+
+Termux教程安卓设备">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +31,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>KODI访问网络位置 | Loongbx</title>
+    <title>电视盒子 | Loongbx</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -268,12 +280,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">KODI访问网络位置</h1>
+                    <h1 class="description center-align post-title">电视盒子</h1>
                 </div>
             </div>
         </div>
@@ -423,7 +435,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    299
+                    460
                 </div>
                 
 
@@ -453,17 +465,49 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="KODI访问网络位置"><a href="#KODI访问网络位置" class="headerlink" title="KODI访问网络位置"></a>KODI访问网络位置</h2><p>Kodi是一款免费开源的媒体播放器软件，使用此软件作为家庭影院的初阶尝试，实现了电脑（服务器）端媒体文件的局域网内共享。</p>
-<h3 id="计算机开启SMB服务"><a href="#计算机开启SMB服务" class="headerlink" title="计算机开启SMB服务"></a>计算机开启SMB服务</h3><ol>
-<li>网络和Internet——&gt;网络和共享中心——&gt;高级共享设置——&gt;启用网络发现和文件&#x2F;打印机<br>所有网络——&gt;公用文件夹共享——&gt;启用共享  </li>
-<li>右键我的电脑——&gt;管理——&gt;本地用户和组——&gt;用户——&gt;右键新建用户——&gt;配置用户名密码  </li>
-<li>选中共享文件夹——&gt;右键属性——&gt;共享——&gt;添加新建用户名——&gt;配置权限——&gt;共享<h3 id="KODI添加视频源"><a href="#KODI添加视频源" class="headerlink" title="KODI添加视频源"></a>KODI添加视频源</h3></li>
+                <h1 id="电视盒子"><a href="#电视盒子" class="headerlink" title="电视盒子"></a>电视盒子</h1><h2 id="系统固件选择"><a href="#系统固件选择" class="headerlink" title="系统固件选择"></a>系统固件选择</h2><ol>
+<li>YYF</li>
+<li>Rush</li>
+<li>LiliN</li>
+<li>Webpad<h2 id="必备软件"><a href="#必备软件" class="headerlink" title="必备软件"></a>必备软件</h2></li>
+</ol>
+<ul>
+<li>ES文件浏览器（ftp服务）</li>
+<li>TVbox（空壳）</li>
+<li>野草助手（应用商店）</li>
+<li>Kodi（PC,NAS）</li>
+<li>Clash（科学上网）</li>
+<li>Termux</li>
+</ul>
+<h2 id="Termux教程"><a href="#Termux教程" class="headerlink" title="Termux教程"></a>Termux教程</h2><p>安卓设备中的linux运行环境，可安装Ubuntu，kali等常见linux系统。</p>
+<h3 id="安装配置ssh"><a href="#安装配置ssh" class="headerlink" title="安装配置ssh"></a>安装配置ssh</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">移动设备安装ssh：
+pkg <span class="token function">install</span> openssh  /安装ssh
+<span class="token function">passwd</span> 				 /设置密码
+sshd				 /启动
+<span class="token function">vim</span> .bashrc
+<span class="token builtin class-name">echo</span> sshd <span class="token operator">>></span> .bashrc /开机自启
+PC端windows terminal连接：
+新建配置文件--<span class="token operator">></span>配置命令
+<span class="token function">ssh</span> <span class="token number">192.168</span>.1.2 -p <span class="token number">8022</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="KODI教程"><a href="#KODI教程" class="headerlink" title="KODI教程"></a>KODI教程</h2><p>Kodi是一款免费开源的媒体播放器软件，使用此软件作为家庭影院的初阶尝试，实现了电脑（服务器）端媒体文件的局域网内共享。</p>
+<h3 id="PC开启-x2F-关闭共享"><a href="#PC开启-x2F-关闭共享" class="headerlink" title="PC开启&#x2F;关闭共享"></a>PC开启&#x2F;关闭共享</h3><h4 id="开启"><a href="#开启" class="headerlink" title="开启"></a>开启</h4><ol>
+<li>网络和Internet——&gt;网络和共享中心——&gt;高级共享设置——&gt;启用网络发现和文件&#x2F;打印机<br>所有网络——&gt;公用文件夹共享——&gt;启用共享 </li>
+<li>右键我的电脑——&gt;管理——&gt;本地用户和组——&gt;用户——&gt;右键新建用户——&gt;配置用户名密码 </li>
+<li>选中共享文件夹——&gt;右键属性——&gt;共享——&gt;添加新建用户名——&gt;配置权限——&gt;共享<h4 id="关闭"><a href="#关闭" class="headerlink" title="关闭"></a>关闭</h4></li>
+<li>右键我的电脑——&gt;管理——&gt;共享文件夹——&gt;共享——&gt;选中文件夹——&gt;右键停止共享</li>
+</ol>
+<h3 id="KODI添加视频源"><a href="#KODI添加视频源" class="headerlink" title="KODI添加视频源"></a>KODI添加视频源</h3><ol>
 <li>设置——&gt;Interface——&gt;SKIN——&gt;Fonts——&gt;Arial,Regional——&gt;Language——&gt;中文</li>
-<li>电影——&gt;进入文件区——&gt;添加视频——&gt;浏览——&gt;添加网络位置——&gt;服务器名称填计算机IP——&gt;填写用户名密码<h3 id="KODI添加直播源"><a href="#KODI添加直播源" class="headerlink" title="KODI添加直播源"></a>KODI添加直播源</h3></li>
+<li>电影——&gt;进入文件区——&gt;添加视频——&gt;浏览——&gt;添加网络位置——&gt;服务器名称填计算机IP——&gt;填写用户名密码</li>
+</ol>
+<h3 id="KODI添加直播源"><a href="#KODI添加直播源" class="headerlink" title="KODI添加直播源"></a>KODI添加直播源</h3><ol>
 <li>插件——&gt;下载——&gt;安装PVR IPTVSimple Client<br> 插件——&gt;我的插件——&gt;PVR客户端——&gt;PVR IPTVSimple Client——&gt;设置——&gt;填写m3u播放列表URL</li>
 <li>直播源URL：<a target="_blank" rel="noopener" href="https://github.com/iptv-org/iptv">https://github.com/iptv-org/iptv</a></li>
 </ol>
-
+<h2 id="教育资源"><a href="#教育资源" class="headerlink" title="教育资源"></a>教育资源</h2>
                 
             </div>
             <hr/>
@@ -530,13 +574,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/05/CAD%E5%9F%BA%E7%A1%80/">
+                <a href="/2022/03/05/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="CAD基础">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="电脑软件">
                         
-                        <span class="card-title">CAD基础</span>
+                        <span class="card-title">电脑软件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -553,8 +597,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" class="post-category">
-                                    办公软件
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6/" class="post-category">
+                                    软件
                                 </a>
                             
                             
@@ -564,8 +608,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/cad/">
-                        <span class="chip bg-color">cad</span>
+                    <a href="/tags/tor/">
+                        <span class="chip bg-color">tor</span>
                     </a>
                     
                 </div>
@@ -579,13 +623,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/05/Linux%E5%91%BD%E4%BB%A4/">
+                <a href="/2022/03/05/%E9%87%91%E9%92%B1%E5%8D%A6/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Linux命令">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="金钱卦">
                         
-                        <span class="card-title">Linux命令</span>
+                        <span class="card-title">金钱卦</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -602,8 +646,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/IT/" class="post-category">
-                                    IT
+                            <a href="/categories/%E5%8F%A4%E5%85%B8%E6%96%87%E5%AD%A6/" class="post-category">
+                                    古典文学
                                 </a>
                             
                             
@@ -613,8 +657,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
+                    <a href="/tags/%E6%98%93/">
+                        <span class="chip bg-color">易</span>
                     </a>
                     
                 </div>
@@ -818,7 +862,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">34.6k</span>
+                        class="white-color">34.7k</span>
             
             
             
