@@ -6,10 +6,9 @@
     <meta charset="utf-8">
     <meta name="keywords" content="个人博客搭建, Loongbx">
     <meta name="description" content="个人博客搭建利用hexo博客框架部署个人博客到github，操作简单，教程全面且易于获取，对新手较为友好。
-软件安装git
-nodejs 检测：node -v npm -v(node安装已包含)
-hexo
-连接Githubgit confi">
+软件安装&amp;#x2F;&amp;#x2F; nginx要安装到普通用户目录，否则运行有权限冲突
+git
+nodejs 检测：node -v n">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -425,14 +424,14 @@ hexo
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    437
+                    536
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -456,9 +455,13 @@ hexo
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="个人博客搭建"><a href="#个人博客搭建" class="headerlink" title="个人博客搭建"></a>个人博客搭建</h2><p>利用hexo博客框架部署个人博客到github，操作简单，教程全面且易于获取，对新手较为友好。</p>
-<h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h3><pre class="line-numbers language-none"><code class="language-none">git
+<h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h3><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; nginx要安装到普通用户目录，否则运行有权限冲突
+git
 nodejs 检测：node -v npm -v(node安装已包含)
-hexo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+hexo
+&#x2F;&#x2F; WSL迁移到D盘
+wsl --list
+wsl --manage kali-linux --move D:\WSL\Kali<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="连接Github"><a href="#连接Github" class="headerlink" title="连接Github"></a>连接Github</h3><pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;username&quot;
 git config --global user.email &quot;email&quot;
 ssh -T git@github.com 远程测试连接github仓库
@@ -468,20 +471,33 @@ github，Settings-&gt;Developer settings-&gt;Personal access tokens-&gt;Generate
 	1. 填写note，勾选select scopes下的repo选项，提交生成一串口令，复制
 	2. hexo d 部署，过程中填写note内容和口令，username，password
 git clone https:&#x2F;&#x2F;github... 从github上下载主题包<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h3><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli 安装hexo
-npm install hexo-deployer-git --save git部署插件安装
-hexo init 新建文件夹下初始化hexo
-hexo clean&#x2F;generate&#x2F;server&#x2F;deploy 清除缓存&#x2F;生成静态页面&#x2F;运行本地服务&#x2F;部署到服务器
-hexo new &quot;filename&quot; 新建文章
-hexo new page &quot;pageame&quot; 新建页面
-hexo help 查看帮助
+<h3 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h3><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 安装hexo
+npm install -g hexo-cli 
+&#x2F;&#x2F; 部署插件安装
+npm install hexo-deployer-git --save git  
+&#x2F;&#x2F; 新建文件夹下初始化hexo
+hexo init 
+&#x2F;&#x2F; 清除缓存&#x2F;生成静态页面&#x2F;运行本地服务&#x2F;部署到服务器
+hexo clean&#x2F;generate&#x2F;server&#x2F;deploy
+&#x2F;&#x2F; 新建文章
+hexo new &quot;filename&quot; 
+&#x2F;&#x2F; 新建页面
+hexo new page &quot;pageame&quot;
+&#x2F;&#x2F; 查看帮助
+hexo help 
 
-修改全局配置文件文件应用主题和hexo配置
+&#x2F;&#x2F; 修改全局配置文件文件应用主题和hexo配置
 deploy:
 	type: git
 	repository: git@github.com:Loongbx&#x2F;Loongbx.github.io.git  
 	branch: master
-hexo g -d  部署到github<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#x2F;&#x2F; 部署到github
+hexo g -d  
+&#x2F;&#x2F; 开启mathjax支持，显示数学公式
+修改&#x2F;home&#x2F;blog&#x2F;themes&#x2F;hexo_theme_matery&#x2F;_config.yml
+mathjax:
+	enable:false -&gt; mathjax:true
+文章Front-matter中加上：mathjax:true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><pre class="line-numbers language-none"><code class="language-none">hexo clean	clean
 hexo g	generate
 hexo d  deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -852,7 +868,7 @@ spawn failed
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">34.7k</span>
+                        class="white-color">37.7k</span>
             
             
             

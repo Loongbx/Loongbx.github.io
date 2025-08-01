@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-07-17T04:44:36.000Z</updated>
+  <updated>2025-08-01T16:33:55.432Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LateX语法</title>
+    <link href="http://example.com/2025/08/02/LateX%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2025/08/02/LateX%E8%AF%AD%E6%B3%95/</id>
+    <published>2025-08-01T16:29:11.000Z</published>
+    <updated>2025-08-01T16:33:55.432Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;LateX语法&quot;&gt;&lt;a href=&quot;#LateX语法&quot; class=&quot;headerlink&quot; title=&quot;LateX语法&quot;&gt;&lt;/a&gt;LateX语法&lt;/h1&gt;&lt;h2 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    <category term="IT" scheme="http://example.com/categories/IT/"/>
+    
+    
+    <category term="MD,LateX" scheme="http://example.com/tags/MD-LateX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人教版高一数一（A）</title>
+    <link href="http://example.com/2025/07/30/%E4%BA%BA%E6%95%99%E7%89%88%E9%AB%98%E4%B8%80%E6%95%B0%E4%B8%80%EF%BC%88A%EF%BC%89/"/>
+    <id>http://example.com/2025/07/30/%E4%BA%BA%E6%95%99%E7%89%88%E9%AB%98%E4%B8%80%E6%95%B0%E4%B8%80%EF%BC%88A%EF%BC%89/</id>
+    <published>2025-07-30T05:59:48.000Z</published>
+    <updated>2025-08-01T09:31:46.739Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;数一（A）&quot;&gt;&lt;a href=&quot;#数一（A）&quot; class=&quot;headerlink&quot; title=&quot;数一（A）&quot;&gt;&lt;/a&gt;数一（A）&lt;/h1&gt;&lt;h2 id=&quot;一、集合与常用逻辑用语&quot;&gt;&lt;a href=&quot;#一、集合与常用逻辑用语&quot; class=&quot;headerlink</summary>
+      
+    
+    
+    
+    <category term="教学" scheme="http://example.com/categories/%E6%95%99%E5%AD%A6/"/>
+    
+    
+    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>小学教育</title>
@@ -43,7 +87,7 @@
     <link href="http://example.com/2025/07/01/%E6%95%B0%E5%AD%A6%E6%95%99%E5%AD%A6%E6%96%B9%E6%B3%95/"/>
     <id>http://example.com/2025/07/01/%E6%95%B0%E5%AD%A6%E6%95%99%E5%AD%A6%E6%96%B9%E6%B3%95/</id>
     <published>2025-07-01T08:25:37.000Z</published>
-    <updated>2025-07-01T09:55:42.000Z</updated>
+    <updated>2025-08-01T16:31:39.732Z</updated>
     
     
       
@@ -53,7 +97,7 @@
     
     
     
-    <category term="教学" scheme="http://example.com/categories/%E6%95%99%E5%AD%A6/"/>
+    <category term="教育" scheme="http://example.com/categories/%E6%95%99%E8%82%B2/"/>
     
     
     <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
@@ -415,51 +459,6 @@
     
     
     <category term="Shodan,Openvas,Nessus" scheme="http://example.com/tags/Shodan-Openvas-Nessus/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kali工具使用</title>
-    <link href="http://example.com/2022/04/10/kali%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    <id>http://example.com/2022/04/10/kali%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</id>
-    <published>2022-04-10T05:58:46.000Z</published>
-    <updated>2024-06-22T07:42:16.000Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Kali工具使用&quot;&gt;&lt;a href=&quot;#Kali工具使用&quot; class=&quot;headerlink&quot; title=&quot;Kali工具使用&quot;&gt;&lt;/a&gt;Kali工具使用&lt;/h2&gt;&lt;h3 id=&quot;NETCAT-NC&quot;&gt;&lt;a href=&quot;#NETCAT-NC&quot; class=&quot;he</summary>
-      
-    
-    
-    
-    <category term="网络安全" scheme="http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    
-    
-    <category term="NC,MSF" scheme="http://example.com/tags/NC-MSF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CAD基础</title>
-    <link href="http://example.com/2022/03/05/CAD%E5%9F%BA%E7%A1%80/"/>
-    <id>http://example.com/2022/03/05/CAD%E5%9F%BA%E7%A1%80/</id>
-    <published>2022-03-05T12:32:25.000Z</published>
-    <updated>2024-06-22T07:42:16.000Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;CAD基础&quot;&gt;&lt;a href=&quot;#CAD基础&quot; class=&quot;headerlink&quot; title=&quot;CAD基础&quot;&gt;&lt;/a&gt;CAD基础&lt;/h2&gt;&lt;p&gt;CAD基础命令&lt;/p&gt;
-&lt;h3 id=&quot;平面图绘制&quot;&gt;&lt;a href=&quot;#平面图绘制&quot; class=&quot;headerl</summary>
-      
-    
-    
-    
-    <category term="办公软件" scheme="http://example.com/categories/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="cad" scheme="http://example.com/tags/cad/"/>
     
   </entry>
   
