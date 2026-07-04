@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-07-04T11:43:05.468Z</updated>
+  <updated>2026-07-04T11:57:16.118Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>初中数学原理</title>
+    <link href="http://example.com/2026/07/04/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86/"/>
+    <id>http://example.com/2026/07/04/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86/</id>
+    <published>2026-07-04T11:56:24.000Z</published>
+    <updated>2026-07-04T11:57:16.118Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;初中数学原理&quot;&gt;&lt;a href=&quot;#初中数学原理&quot; class=&quot;headerlink&quot; title=&quot;初中数学原理&quot;&gt;&lt;/a&gt;初中数学原理&lt;/h1&gt;&lt;h2 id=&quot;一、综述&quot;&gt;&lt;a href=&quot;#一、综述&quot; class=&quot;headerlink&quot; title=&quot;一</summary>
+      
+    
+    
+    
+    <category term="教育" scheme="http://example.com/categories/%E6%95%99%E8%82%B2/"/>
+    
+    
+    <category term="初中数学" scheme="http://example.com/tags/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>初中数学解题方法</title>
@@ -435,29 +457,6 @@
     
     
     <category term="美化" scheme="http://example.com/tags/%E7%BE%8E%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电气常识</title>
-    <link href="http://example.com/2022/11/06/%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86/"/>
-    <id>http://example.com/2022/11/06/%E7%94%B5%E6%B0%94%E5%B8%B8%E8%AF%86/</id>
-    <published>2022-11-06T14:15:43.000Z</published>
-    <updated>2025-08-26T09:07:16.385Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;电气常识&quot;&gt;&lt;a href=&quot;#电气常识&quot; class=&quot;headerlink&quot; title=&quot;电气常识&quot;&gt;&lt;/a&gt;电气常识&lt;/h2&gt;&lt;p&gt;短暂的重工业从业经验，虽然不喜欢其工作内容，但知识不愁无用，纯科普向。&lt;/p&gt;
-&lt;h3 id=&quot;常见概念&quot;&gt;&lt;a href=</summary>
-      
-    
-    
-    
-    <category term="科普" scheme="http://example.com/categories/%E7%A7%91%E6%99%AE/"/>
-    
-    
-    <category term="电气" scheme="http://example.com/tags/%E7%94%B5%E6%B0%94/"/>
     
   </entry>
   

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>初中数学原理</title>
+      <link href="/2026/07/04/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86/"/>
+      <url>/2026/07/04/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="初中数学原理"><a href="#初中数学原理" class="headerlink" title="初中数学原理"></a>初中数学原理</h1><h2 id="一、综述"><a href="#一、综述" class="headerlink" title="一、综述"></a>一、综述</h2><h3 id="1-几何算子层"><a href="#1-几何算子层" class="headerlink" title="1.几何算子层"></a>1.几何算子层</h3><table><thead><tr><th>算子</th><th>控制什么</th><th>本质功能</th></tr></thead><tbody><tr><td>垂直</td><td>角度锁死</td><td>刚性约束</td></tr><tr><td>平行</td><td>比例保持</td><td>仿射结构</td></tr><tr><td>对称</td><td>距离守恒</td><td>等距变换</td></tr><tr><td>中点</td><td>线性平均</td><td>比例生成</td></tr><tr><td>圆</td><td>等距集合</td><td>全向约束</td></tr><tr><td>面积</td><td>总量守恒</td><td>全局守恒</td></tr><tr><td>相似</td><td>尺度关系</td><td>比例放大</td></tr></tbody></table><h3 id="2-算子叠加"><a href="#2-算子叠加" class="headerlink" title="2.算子叠加"></a>2.算子叠加</h3><p>通过限制条件的增加去降低自由度，从而让题目答案唯一确定</p><h3 id="3-几何问题本质上只围绕三种控制量"><a href="#3-几何问题本质上只围绕三种控制量" class="headerlink" title="3.几何问题本质上只围绕三种控制量"></a>3.几何问题本质上只围绕三种控制量</h3><ul><li>角度</li><li>比例</li><li>距离</li></ul><h3 id="4-几何模型抽象为约束类型"><a href="#4-几何模型抽象为约束类型" class="headerlink" title="4.几何模型抽象为约束类型"></a>4.几何模型抽象为约束类型</h3><h4 id="①-刚性约束-x2F-锁死（Rigid-Constraint）"><a href="#①-刚性约束-x2F-锁死（Rigid-Constraint）" class="headerlink" title="① 刚性约束&#x2F;锁死（Rigid Constraint）"></a>① 刚性约束&#x2F;锁死（Rigid Constraint）</h4><h5 id="核心特点："><a href="#核心特点：" class="headerlink" title="核心特点："></a>核心特点：</h5><p>锁死角度<br>锁死长度<br>几乎不允许形变</p><h5 id="代表算子："><a href="#代表算子：" class="headerlink" title="代表算子："></a>代表算子：</h5><ul><li>垂直</li><li>等边</li><li>全等</li><li>圆（定半径）</li><li>直径定直角</li></ul><h5 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h5><p>刚性约束减少的是：角度自由度</p><h5 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h5><p>普通三角形有 3 个角自由度<br>一旦出现 90°<br>自由度立即减少</p><h5 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h5><ul><li>构造直角三角形</li><li>触发勾股</li><li>触发等腰</li><li>触发对称</li></ul><h4 id="②-仿射约束-x2F-拉伸（Affine-Constraint）"><a href="#②-仿射约束-x2F-拉伸（Affine-Constraint）" class="headerlink" title="② 仿射约束&#x2F;拉伸（Affine Constraint）"></a>② 仿射约束&#x2F;拉伸（Affine Constraint）</h4><h5 id="核心特点：-1"><a href="#核心特点：-1" class="headerlink" title="核心特点："></a>核心特点：</h5><p>不锁死长度<br>不锁死角度<br>只控制比例和平行</p><h5 id="代表算子：-1"><a href="#代表算子：-1" class="headerlink" title="代表算子："></a>代表算子：</h5><ul><li>平行</li><li>中点</li><li>平行四边形</li><li>相似</li></ul><h5 id="本质-1"><a href="#本质-1" class="headerlink" title="本质"></a>本质</h5><p>它减少的是：<br>方向自由度，而不是形状刚性。<br>平行线可以整体拉伸，<br>但比例关系不变。</p><h5 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h5><ul><li>制造比例链</li><li>制造面积比例</li><li>构造相似</li><li>构造线性结构</li></ul><h4 id="③-守恒约束-x2F-保持（Invariant-Constraint）"><a href="#③-守恒约束-x2F-保持（Invariant-Constraint）" class="headerlink" title="③ 守恒约束&#x2F;保持（Invariant Constraint）"></a>③ 守恒约束&#x2F;保持（Invariant Constraint）</h4><h5 id="核心特点：-2"><a href="#核心特点：-2" class="headerlink" title="核心特点："></a>核心特点：</h5><p>不关心局部角度<br>不关心局部长度<br>关心整体“量”不变</p><h5 id="代表算子：-2"><a href="#代表算子：-2" class="headerlink" title="代表算子："></a>代表算子：</h5><ul><li>面积</li><li>对称</li><li>旋转</li><li>位似</li><li>等距变换</li></ul><h5 id="本质-2"><a href="#本质-2" class="headerlink" title="本质"></a>本质</h5><p>它减少的是：<br>结构变化方式</p><h5 id="例如：-1"><a href="#例如：-1" class="headerlink" title="例如："></a>例如：</h5><p>折叠虽然形状变了，<br>但长度不变。<br>面积转化虽然分割变了，<br>但总量不变。</p><h3 id="5-几何问题实质"><a href="#5-几何问题实质" class="headerlink" title="5.几何问题实质"></a>5.几何问题实质</h3><p>三种约束类型的交叉作用，让题目自由度降低，答案趋于唯一。判断哪一种力量为主导约束，也用对应解题思路。</p><ul><li>如果刚性约束主导<br>→ 必然走直角或等腰</li><li>如果仿射约束主导<br>→ 必然走比例或面积</li><li>如果守恒约束主导<br>→ 必然走不变量</li></ul><h2 id="二、垂直模型"><a href="#二、垂直模型" class="headerlink" title="二、垂直模型"></a>二、垂直模型</h2><h3 id="子模型-1：直角三角形计算模型"><a href="#子模型-1：直角三角形计算模型" class="headerlink" title="子模型 1：直角三角形计算模型"></a>子模型 1：直角三角形计算模型</h3><p>触发条件：<br>出现 ⟂<br>直接转化为：<br>直角三角形<br>导出：</p><ul><li>勾股</li><li>面积 1&#x2F;2 ab</li><li>直角边关系</li></ul><h3 id="子模型-2：垂直制造相似模型"><a href="#子模型-2：垂直制造相似模型" class="headerlink" title="子模型 2：垂直制造相似模型"></a>子模型 2：垂直制造相似模型</h3><p>触发条件：<br>一个直角 + 一组平行<br>原理：<br>平行给你角相等<br>直角固定一个角→ AA 相似<br>本质：<br>垂直负责固定 90°，<br>平行负责复制角度。</p><h3 id="子模型-3：垂直-等边-→-等腰直角模型"><a href="#子模型-3：垂直-等边-→-等腰直角模型" class="headerlink" title="子模型 3：垂直 + 等边 → 等腰直角模型"></a>子模型 3：垂直 + 等边 → 等腰直角模型</h3><p>触发条件：<br>一组边相等 + 垂直<br>直接形成：<br>45°–45°–90°<br>导出：</p><ul><li>两直角边相等</li><li>斜边 &#x3D; √2 × 边</li><li>面积 &#x3D; 1&#x2F;2 a²</li></ul><h3 id="子模型-4：垂直平分线模型"><a href="#子模型-4：垂直平分线模型" class="headerlink" title="子模型 4：垂直平分线模型"></a>子模型 4：垂直平分线模型</h3><p>触发条件：<br>“垂直 + 中点” 或 “折叠”<br>本质：<br>垂直平分线<br>导出：</p><ul><li>到两端点距离相等</li><li>可以构造等腰</li><li>可以确定对称结构</li></ul><h3 id="子模型-5：直角分裂模型"><a href="#子模型-5：直角分裂模型" class="headerlink" title="子模型 5：直角分裂模型"></a>子模型 5：直角分裂模型</h3><p>触发条件：<br>直角三角形中作高<br>结果：<br>一个直角三角形分裂成三个相似三角形。<br>导出：</p><ul><li>比例链</li><li>乘积关系</li><li>线段平方关系</li></ul><h2 id="三、平行四边形折叠模型"><a href="#三、平行四边形折叠模型" class="headerlink" title="三、平行四边形折叠模型"></a>三、平行四边形折叠模型</h2><h3 id="折叠-gt-等量制造机器"><a href="#折叠-gt-等量制造机器" class="headerlink" title="折叠-&gt;等量制造机器"></a>折叠-&gt;等量制造机器</h3><ol><li>边相等</li><li>角相等</li><li><strong>对应点连线⊥对称轴</strong><br>垂直条件可推导出<em><strong>垂直模型</strong></em>，引出直角三角形，从而有面积计算及勾股定理</li></ol><h3 id="平行四边形-平行-gt-全等-x2F-相似"><a href="#平行四边形-平行-gt-全等-x2F-相似" class="headerlink" title="平行四边形(平行)-&gt;全等&#x2F;相似"></a>平行四边形(平行)-&gt;全等&#x2F;相似</h3><p>平行四边形及特殊平行四边形的隐含条件为多组直线平行，平行可推导出相似(全等)</p><h3 id="交点-gt-相似-gt-比例链"><a href="#交点-gt-相似-gt-比例链" class="headerlink" title="交点-&gt;相似-&gt;比例链"></a>交点-&gt;相似-&gt;比例链</h3><p>有交点就可找出或通过辅助线构造相似，从而得到比例关系</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教育 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 初中数学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>初中数学解题方法</title>
       <link href="/2026/07/04/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95/"/>
       <url>/2026/07/04/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6%E8%A7%A3%E9%A2%98%E6%96%B9%E6%B3%95/</url>
